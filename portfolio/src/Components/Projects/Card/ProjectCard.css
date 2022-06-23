@@ -1,0 +1,12 @@
+#cardImg{
+    padding: 10%;
+}
+.card{
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px black;
+    border-radius: 1vmax 1vmax 1vmax 1vmax ;
+}
+
+.card-text{
+    font-size: 1.5rem;
+}

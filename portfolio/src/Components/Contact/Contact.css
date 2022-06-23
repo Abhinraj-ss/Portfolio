@@ -1,0 +1,28 @@
+.Contact{
+    height: 100vh;
+    position: relative;
+}
+.footerbox{
+    height: 50%;
+    width: 100%;
+    background-color: #482673;
+    bottom: 0%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    text-align: center;
+}
+
+#footerLogo{
+    height: 4rem;
+    margin-inline: auto;
+    justify-self: center;
+    margin-block: 5%;
+}
+.footerbox>p{
+    font-size: 1rem ;
+    font-weight: 50;
+    line-height: 0.5;
+    bottom: 0%;
+}

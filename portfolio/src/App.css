@@ -1,4 +1,15 @@
 .App {
-  text-align: center;
+  height:100%;
+  width: 100%;
+  font-size: 3rem;
+ /* border: solid red;*/
+ background-color: #F3F3F3;
+}
+*{
+  /* outline: auto; */
+}
+.pages{
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
