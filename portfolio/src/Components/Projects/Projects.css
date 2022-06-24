@@ -1,20 +1,86 @@
 .Projects{
-    height: 101vh;
-    margin-block: 5%;
-    border-bottom:1px solid #482673;
-
+    height: 100;
+    border-bottom:1px solid #482673; 
+    isolation: isolate;   
 }
 .cards{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-column-gap: 4vw;
     padding-inline: 10%;
+    margin-block: 5%;
+}
+.web{
+    grid-template-columns: 1fr;
+    margin-inline:10% ;
+}
+.graphic{
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 3vw;
 }
 
 .heading{
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 2%;
     font-weight: 300;
-    color: #DE354C;
+    color: var(--clr-secondary);
+}
+.cards>*{
+    transition: transform 500ms ease ;
+    transition-delay: 100ms;
+    
+}
+.cards>*:hover{
+    transform: scale(1.02);
+}
+.carousel .slide .carousel-light{
+    position: relative;
+    
+}
+/* .caption{
+    position: relative;
+    padding-top: 20%;
+    padding-inline: 15%;
+    padding-bottom: 5%;
+    margin-top: -20%;
+    background-color: var(--clr-primary);
+    z-index: -1;
+    color: var(--clr-light);
+} */
+.caption{
+    position: relative;
+    padding-inline: 15%;
+    padding-top: 5%;
+    background-color: var(--clr-primary);
+    z-index: -1;
+    color: var(--clr-light);
+}
+.Web{
+    padding-bottom: 32%;
+    margin-bottom: -35%;
+    border-bottom-left-radius:25vmax 15vmax ;
+}
+.Graphic{
+    padding-bottom: 28%;
+    margin-bottom: -30%;
+    border-bottom-left-radius:20vmax 15vmax ;
+}
+.caption>p{
+    font-size: 2rem;
+    position: relative;
+    width: max-content;
+}
+.caption>p::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: -100%;
+    background-color: var(--clr-secondary);
+    position: absolute;
+
+}
+.caption > span{
+
+    font-size: 1.4rem;
+    font-weight: 100;
 }

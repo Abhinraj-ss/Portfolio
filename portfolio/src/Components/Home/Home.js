@@ -1,17 +1,20 @@
 import React from 'react'
 import {Button, Col, Image, Row} from 'react-bootstrap'
+import {useNavigate} from 'react-router-dom';
 
 
 import './Home.css'
 import logo from '../../assets/images/logo_tag.png'
 
 function Home() {
+    const navigate = useNavigate()
   return (
     <div className='Home'>
         <div className="navbar">
             <ul>
                 <Image
                 src={logo}
+                onClick={navigate('/')}
                 />
                 <li className='ms-auto'>
                     Home
@@ -39,7 +42,6 @@ function Home() {
                 </div>
             </Col>
             <Col className="portrait">
-                im col-2
             </Col>
             </Row>
     </div>
