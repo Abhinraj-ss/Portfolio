@@ -9,7 +9,7 @@
 
 .footerbox{
     width: 100%;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-dark);
     bottom: 0%;
     position: absolute;
     display: flex;

@@ -50,7 +50,7 @@
     position: relative;
     padding-inline: 15%;
     padding-top: 5%;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-dark);
     z-index: -1;
     color: var(--clr-light);
 }

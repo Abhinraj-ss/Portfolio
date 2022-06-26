@@ -1,12 +1,13 @@
 .Home{
-    height: 100vh;
-    border-bottom:1px solid var(--clr-primary);
+    height: max-content;
+    padding-bottom:7% ;
+    border-bottom:1px solid var(--clr-dark);
 }
 .navbar{
     margin-top: 1%;    
 
 }
-.navbar>ul{
+.navbar ul{
     display: flex;
     text-align: center;
     list-style: none;
@@ -16,27 +17,54 @@
     justify-content: flex-start;
     font-size: 1.2rem;
     font-weight: 450;
-    color: var(--clr-primary);
+    color: var(--clr-light);
     gap: 2rem;
     padding-inline-end: 3rem; 
 }
-.navbar>ul>li{
-    text-transform: capitalize;
-    padding-top: 1%;
-    cursor: pointer;
-}
-.navbar>ul>img{
+
+.navbar img{
     width: 9rem;
     padding-inline-start: 1rem;
     cursor: pointer;
 }
-#sayHello{
-    border: var(--clr-primary) solid 2px;
+.navbar li{
+    padding-top: 1%;
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+}
+.navbar li:after{
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    background-color:var(--clr-secondary);
+    height: 2px;
+    width: 100%;
+    left: -1%;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: -webkit-transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+}
+.navbar li:focus::after,.navbar li:hover::after{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.navbar .btn{
+    border: var(--clr-secondary) solid 2px;
     border-radius: 100vmax 100vmax;
     margin-block: 0.5%;
     font-size: 1.2rem;
-    background-color: #00000000;
-    color:var(--clr-primary);
+    background-color: var(--clr-bg);
+    color:var(--clr-light);
+    
+}
+.navbar .btn:hover{
+    background-color: var(--clr-secondary);
+    color: var(--clr-light);
+    border: var(--clr-secondary) solid 2px;
 
 }
 
@@ -53,22 +81,19 @@
 .col{
     width: 100%;
     height: 100%;
-    /*border: solid red;*/
 }
 .intro{
     padding-inline-start: 10%;
     padding-top: 13%;
     padding-bottom: 13%;
 }
-.intro>p{
+.intro p{
     color: var(--clr-secondary);
-    /*border: red solid;*/
     font-size: 1.5rem;
     margin-bottom: 0%;  
 }
-.main-heading>h1{
-    color: var(--clr-primary);
+.main-heading h1{
+    color: var(--clr-light);
     margin-top: 0;
     font-size: 3.5rem;
-    /*border:violet solid;*/
 }

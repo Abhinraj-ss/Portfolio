@@ -1,5 +1,9 @@
 :root{
-  --clr-primary:#482673;
+  /* --clr-primary:#482673;
+  --clr-light:#f3f3f3;
+  --clr-secondary:#DE354C; */
+  --clr-dark:#0a192f;
+  --clr-bg:#112240;
   --clr-light:#f3f3f3;
   --clr-secondary:#DE354C;
 }
@@ -8,12 +12,14 @@
   width: 100%;
   font-size: 3rem;
  /* border: solid red;*/
- background-color: var(--clr-light);
+ background-color: var(--clr-bg);
 }
 *{
   /* outline: auto; */
 }
-
+:focus{
+  /* outline: none; */
+}
 
 .pages{
   flex-direction: column;

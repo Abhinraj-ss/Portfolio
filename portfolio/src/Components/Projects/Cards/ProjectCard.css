@@ -4,7 +4,7 @@
 
 .projectCard {
     background-color: #f3f3f3; 
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.193);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.095);
     border-radius: 0.5vmax 0.5vmax 0.5vmax 0.5vmax ;
     overflow: hidden;
     max-width: 40ch;
@@ -17,7 +17,7 @@
     position: relative;
     color: var(--clr-light);
     margin-top: 40%;
-    background: linear-gradient(to bottom, #1f1e250f, #16151d);
+    background: linear-gradient(to bottom, #1e1d2377, #16151d);
 
 }
 .card-body>p{

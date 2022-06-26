@@ -39,7 +39,7 @@ function Contact() {
           
         </div>
         <p>
-          Handcrafted by me &nbsp;  
+          Handcrafted by ABHIN RAJ &nbsp;  
         </p>
         <p>
           Made with passion
