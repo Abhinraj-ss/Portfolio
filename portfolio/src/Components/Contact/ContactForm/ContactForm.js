@@ -73,7 +73,6 @@ function ContactForm() {
                                 Message is a required field.
                             </Form.Control.Feedback>
                         </Form.Group>
-                           
                             <Button
                             type="submit"
                             variant="success"
@@ -90,7 +89,6 @@ function ContactForm() {
                             }
                             </Button>
                     </Form>
-          
                 </Col>
             </Row>
         
