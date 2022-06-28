@@ -24,19 +24,27 @@
     color: var(--clr-secondary);
 }
 #messageLogo{
-    max-width: 6em;
-    margin: 1em;
+    max-width: 5em;
+    margin-inline: 30%;
 }
 .contactForm .form-label{
     font-size: 1.3rem;
     font-weight: 150;
     margin-inline: 2%;
 }
+
+.cardContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    outline: auto;
+    
+}
 .cForm{
     padding-bottom: 5%;
     padding-inline: 5%;
-}
 
+}
 .contactForm .btn{
     margin-top: 8%;
 }
@@ -44,4 +52,15 @@
 .invalid-feedback{
     font-size: 1rem;
     font-weight: 150;
+}
+
+@media screen and (max-width:840px) {
+    .cardContent{
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: center;
+    }
+    #messageLogo{
+        margin-top: 0.5em;
+    }
 }

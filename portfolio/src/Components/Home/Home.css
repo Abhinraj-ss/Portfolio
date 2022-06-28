@@ -176,7 +176,7 @@ Home Content
 
 .intro{
     justify-self: center;
-    padding: 1.5em 2em 2em 2em;
+    padding: 5% 10% 10% 10%;
     margin-inline:auto;
     max-width: 900px;
     /* background-color: var(--clr-dark);
@@ -192,7 +192,7 @@ Home Content
 .main-heading h1{
     color: var(--clr-light);
     margin-top: 0;
-    font-size: 9vh;
+    font-size: 1em;
     font-family: 'Exo 2', sans-serif;
 }
 .intro .btn{

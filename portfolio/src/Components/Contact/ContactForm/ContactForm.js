@@ -30,15 +30,15 @@ function ContactForm() {
             <Card.Title>
                 Get In Touch
             </Card.Title>
-            <Row>
-                <Col>
+            <div className='cardContent'>
+                <div>
                     <Image
                     alt='message'
                     id='messageLogo'
                     loading='lazy'
                     src={messageLogo}/>
-                </Col>
-                <Col className='cForm'>
+                </div>
+                <div className='cForm'>
                     <Form noValidate validated={validated} onSubmit={handleValidate}>
                         <Form.Group className='my-0'>
                             <Form.Label>Name</Form.Label>
@@ -90,8 +90,8 @@ function ContactForm() {
                             }
                             </Button>
                     </Form>
-                </Col>
-            </Row>
+                </div>
+            </div>
         
         </Card>
     </div>
