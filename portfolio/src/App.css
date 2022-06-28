@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 :root{
   /* --clr-primary:#482673;
   --clr-light:#f3f3f3;
@@ -6,6 +9,16 @@
   --clr-bg:#112240;
   --clr-light:#f3f3f3;
   --clr-secondary:#DE354C;
+}
+h1{
+  font-family: 'Dosis', sans-serif;
+}
+p,li{
+  font-family: 'Open Sans', sans-serif;
+}
+.btn{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 50;
 }
 .App {
   height:100%;

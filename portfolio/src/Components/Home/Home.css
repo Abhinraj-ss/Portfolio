@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
 .Home{
     height: 100%;
     background-color: var(--clr-dark);
@@ -8,11 +10,14 @@
     Navbar
 ****************/
 
-
 .navbar{  
     display: flex;
     flex-direction: row;
-    margin-inline: 0.5em;   
+    padding-inline: 0.5em; 
+    background-color: var(--clr-dark);  
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 .navbar *{
     /* outline:auto; */
@@ -187,7 +192,8 @@ Home Content
 .main-heading h1{
     color: var(--clr-light);
     margin-top: 0;
-    font-size: 7vh;
+    font-size: 9vh;
+    font-family: 'Exo 2', sans-serif;
 }
 .intro .btn{
     background-color: var(--clr-secondary);
@@ -203,3 +209,4 @@ Home Content
    flex-direction: row;
    gap: 15px;
   }
+  

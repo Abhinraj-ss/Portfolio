@@ -44,10 +44,14 @@
 .Web{
     padding-bottom: 32%;
     margin-bottom: -35%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+    border-top: 1px var(--clr-secondary) solid;
 }
 .Graphic{
     padding-bottom: 28%;
     margin-bottom: -30%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+    border-top: 1px var(--clr-secondary) solid;
 }
 .caption>p{
     font-size: 0.6em;

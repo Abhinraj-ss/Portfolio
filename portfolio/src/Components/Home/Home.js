@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from 'react'
-import {Button, Col, Image, Row} from 'react-bootstrap'
+import React,{useState} from 'react'
+import {Button, Image} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
 
@@ -15,9 +15,9 @@ function Home() {
         menuOpen? setIcon(menuIcon):setIcon(closeIcon)
         setMenuOpen( !menuOpen)
     }
+      
   return (
     <div className='Home'>
-        
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
         <div className="navbar">
             <a href='/'>
@@ -53,22 +53,6 @@ function Home() {
                 width={35} 
                 onClick={handleMenuClick}/>
             </div>
-
-           
-            {/* {<ul className="navbarToggle">
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        Skills
-                    </li>
-                    <li>
-                        Projects
-                    </li>
-                    <li>
-                        About
-                    </li>
-                </ul>} */}
         </div>
             <div className="content">
             <div className="intro"> 

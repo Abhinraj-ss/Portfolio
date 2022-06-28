@@ -2,7 +2,9 @@ import React from 'react'
 import {Button} from 'react-bootstrap'
 
 import './ProjectCard.css'
+
 function ProjectCard( {logo}) {
+  
   return (
     <div className="projectCard" style={{background: `url(${logo})`,backgroundSize:'cover'}} >
 

@@ -2,7 +2,6 @@
     height: fit-content;
     position: relative;
     isolation: isolate;
-    background-color: var(--clr-dark);
 
 }
 .Contact *{
@@ -20,13 +19,14 @@
     text-align: center;
     padding-bottom: 5%;
     z-index: -1;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #footerLogo{
     height: 4rem;
     margin-inline: auto;
     justify-self: center;
-    margin-top: 20%;
+    margin-top: 25%;
 }
 .footerbox>p{
     font-size: 0.9rem ;
