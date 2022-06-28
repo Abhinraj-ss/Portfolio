@@ -1,6 +1,5 @@
 .Projects{
-    height: 100;
-    border-bottom:1px solid #482673; 
+    margin-top: 5vmax;
     isolation: isolate;   
 }
 .cards{
@@ -9,12 +8,13 @@
     margin-block: 5%;
 }
 .web{
-    grid-template-columns: 1fr;
-    margin-inline:10% ;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 3vw;
 }
 .graphic{
     grid-template-columns:1fr 1fr 1fr;
-    grid-gap: 3vw;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2vw;
 }
 
 .heading{
@@ -32,20 +32,7 @@
 .cards>*:hover{
     transform: scale(1.02);
 }
-.carousel .slide .carousel-light{
-    position: relative;
-    
-}
-/* .caption{
-    position: relative;
-    padding-top: 20%;
-    padding-inline: 15%;
-    padding-bottom: 5%;
-    margin-top: -20%;
-    background-color: var(--clr-primary);
-    z-index: -1;
-    color: var(--clr-light);
-} */
+
 .caption{
     position: relative;
     padding-inline: 15%;
@@ -57,15 +44,13 @@
 .Web{
     padding-bottom: 32%;
     margin-bottom: -35%;
-    border-bottom-left-radius:25vmax 15vmax ;
 }
 .Graphic{
     padding-bottom: 28%;
     margin-bottom: -30%;
-    border-bottom-left-radius:20vmax 15vmax ;
 }
 .caption>p{
-    font-size: 2rem;
+    font-size: 0.6em;
     position: relative;
     width: max-content;
 }
@@ -80,7 +65,17 @@
 
 }
 .caption > span{
-
-    font-size: 1.4rem;
+    font-size: 0.4em;
     font-weight: 100;
+}
+
+.Projects .btnSee{
+    background-color:transparent;
+    border:2px solid  var(--clr-secondary);
+    margin-left: 40%;
+    min-width:20%;
+    margin-bottom: 2vmax;
+}
+.Projects .btnSee:hover{
+    background-color: var(--clr-secondary);
 }

@@ -1,5 +1,22 @@
 .About{
-    height: 100vh;
-    border-bottom:1px solid #482673;
-    margin: 0;
+    height: fit-content;
+    margin-inline: 0.5em;
+    margin-top: 0.5em;
+}
+.About *{
+    
+    /* outline: auto; */
+}
+.bubble{
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    padding: 10%;
+    border-radius: 0 0 1vmax 1vmax;
+    text-align: center;
+}
+
+.bubble p{
+    font-size: 0.4em;
+    font-weight: 100;
+    margin-bottom: 2em;
 }

@@ -15,7 +15,7 @@ function Contact() {
       <ContactForm/>
       <div className="footerbox">
       <Image
-      loading='lazy'
+          loading='lazy'
           id='footerLogo'
           src={logo}
           />

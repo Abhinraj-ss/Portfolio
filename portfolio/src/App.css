@@ -13,8 +13,11 @@
   font-size: 3rem;
  /* border: solid red;*/
  background-color: var(--clr-bg);
+ position:relative;
+ overflow-x: hidden;
 }
 *{
+  box-sizing: border-box;
   /* outline: auto; */
 }
 :focus{

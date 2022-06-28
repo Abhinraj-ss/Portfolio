@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
+
 
 import './App.css';
 import About from './Components/About/About';
@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <div className="pages d-flex">
         <Home/>
-        <Projects/>
         <About/>
+        <Projects/>
         <Contact/>
       </div>
       

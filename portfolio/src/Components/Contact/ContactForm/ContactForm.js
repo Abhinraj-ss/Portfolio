@@ -28,13 +28,14 @@ function ContactForm() {
     <div className="contactForm">
         <Card>
             <Card.Title>
-                Contact
+                Get In Touch
             </Card.Title>
             <Row>
                 <Col>
                     <Image
                     alt='message'
                     id='messageLogo'
+                    loading='lazy'
                     src={messageLogo}/>
                 </Col>
                 <Col className='cForm'>

@@ -2,7 +2,7 @@
     position: relative;
     padding-block: 4%;
     padding-inline: 10%;
-    margin-bottom: 27%;
+    margin-bottom: 6em;
 }
 .contactForm *{
     /* outline: auto; */
@@ -12,28 +12,25 @@
     border-radius: 0.5vmax 0.5vmax 0.5vmax 0.5vmax;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.177);
     color: var(--clr-light);
-    /* transition: transform 500ms ease; */
+
 }
 
-.contactForm .card:hover{
-    /* transform: scale(1.005); */
-}
+
 .contactForm .card-title{
     text-align: center;
     margin-top: 4%;
     font-size: 2.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 500;
     color: var(--clr-secondary);
 }
 #messageLogo{
-    width: 9em;
-    margin-inline: 1.5em;
+    max-width: 6em;
+    margin: 1em;
 }
 .contactForm .form-label{
     font-size: 1.3rem;
     font-weight: 150;
-    margin: 0%;
+    margin-inline: 2%;
 }
 .cForm{
     padding-bottom: 5%;
