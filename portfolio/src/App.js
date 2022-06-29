@@ -7,12 +7,11 @@ import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
 
 function App() {
- 
   return (
     <div className="App">
-      <div className="pages d-flex">
+      <div className="pages d-flex"  >
         <Home/>
-        <About/>
+        <About />
         <Projects/>
         <Contact/>
       </div>

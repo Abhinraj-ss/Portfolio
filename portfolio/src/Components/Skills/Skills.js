@@ -1,34 +1,38 @@
-import React from 'react'
+import {React,useRef} from 'react'
 import { Card, Col, Image} from 'react-bootstrap'
 
 import './Skills.css'
 import designerIcon from '../../assets/images/vector.png'
 import developerIcon from '../../assets/images/coding.png'
+import useElementOnScroll from '../../assets/useElementOnScroll'
 
 function Skills() {
+  
+  const skillsContentRef = useRef(null)
+  const isVisible = useElementOnScroll(skillsContentRef)
   return (
     <Card className="skills">
             <Col>
-                <Image src={designerIcon} height={120}/>
-                <h3>
+                <Image src={designerIcon} height={120} ref={skillsContentRef} data-visible={isVisible}/>
+                <h3 ref={skillsContentRef} data-visible={isVisible}>
                     Graphic Designer
                 </h3>
                 <span>
-                  <p className='abstract'>
+                  <p className='abstract' ref={skillsContentRef} data-visible={isVisible}>
                   I like to design minimal but efective contents 
                   and never hesitates to try new things. 
                   </p>
                 </span>
-                <h5>
+                <h5 ref={skillsContentRef} data-visible={isVisible}>
                   What I'm Doing
                 </h5>
-                <p className='abstract'>
+                <p className='abstract' ref={skillsContentRef} data-visible={isVisible}>
                   Icons, Logos, Portraits, Vectors 
                 </p>
-                <h4>
+                <h4 ref={skillsContentRef} data-visible={isVisible}>
                   My Design Tools
                 </h4>
-                <ul className='abstract'>
+                <ul className='abstract' ref={skillsContentRef} data-visible={isVisible}>
                   <li>
                     Illustrator
                   </li>

@@ -15,11 +15,11 @@ function Projects() {
             <p>
               this is a demo caption.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
               molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-              numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
             </p>
           </span>
         </div> 
           <div className="web cards">
+            <ProjectCard logo={webLogo}/>
             <ProjectCard logo={webLogo}/>
             <ProjectCard logo={webLogo}/>
           </div>
@@ -29,7 +29,6 @@ function Projects() {
             <p>
               this is a demo caption.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
               molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-              numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
             </p>
           </span>
         </div> 
@@ -40,6 +39,7 @@ function Projects() {
           <ProjectCard logo={graphicLogo}/>
           <ProjectCard logo={graphicLogo}/>
           <ProjectCard logo={graphicLogo}/>
+          
         </div>
         <Button className='btnSee'>
           See More

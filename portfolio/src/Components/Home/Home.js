@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useRef, useState} from 'react'
 import {Button, Image} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
@@ -7,9 +7,13 @@ import './Home.css'
 import logo from '../../assets/images/logo_footer.png'
 import menuIcon from '../../assets/images/menu.png'
 import closeIcon from '../../assets/images/closeIconWyt.png'
+import useElementOnScroll from '../../assets/useElementOnScroll'
 
 function Home() {
     const [menuOpen, setMenuOpen]=useState(false)
+    const homeRef = useRef(null)
+    const isVisible = useElementOnScroll(homeRef)
+
     var [icon,setIcon] = useState(menuIcon)
     const handleMenuClick=()=>{
         menuOpen? setIcon(menuIcon):setIcon(closeIcon)
@@ -17,9 +21,9 @@ function Home() {
     }
       
   return (
-    <div className='Home'>
+    <div className='Home' ref={homeRef} >
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
-        <div className="navbar">
+        <div className="navbar" data-visible={isVisible}>
             <a href='/'>
                     <Image
                     className='logo'

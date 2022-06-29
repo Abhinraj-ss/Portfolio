@@ -10,6 +10,12 @@
   --clr-light:#f3f3f3;
   --clr-secondary:#DE354C;
 }
+.test{
+  background-color: yellow;
+  position: fixed;
+  color: red;
+  z-index: 1001;
+}
 h1{
   font-family: 'Dosis', sans-serif;
 }

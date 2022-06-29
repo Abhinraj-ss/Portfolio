@@ -7,8 +7,6 @@ function ProjectCard( {logo}) {
   
   return (
     <div className="projectCard" style={{background: `url(${logo})`,backgroundSize:'cover'}} >
-
-        {/* <img loading='lazy' id='cardImg' src= {logo}/> */}
         <div className="card-body">
             <p>
               Title..

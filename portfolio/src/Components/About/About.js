@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 import './About.css'
 import Skills from '../Skills/Skills'
+import useElementOnScroll from '../../assets/useElementOnScroll'
 
 function About() {
+  const aboutContentRef = useRef(null)
+  const isVisible = useElementOnScroll(aboutContentRef)
+  console.log(isVisible)
   return (
     <div className='About'>
-    <div className="bubble">
+    <div className="about-content" data-visible={isVisible}>
     <span>
-        <h1>
+        <h1 ref={aboutContentRef} data-visible={isVisible} >
           Hi, I'm Abhin Raj.
-        </h1>
-        <p>
+        </h1 >
+        <p ref={aboutContentRef} data-visible={isVisible}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
           , vero omnis! Dignissimos repellat labore nulla omnis ipsa 
           consequuntur atque voluptatum tempora, asperiores totam accusamus, 
@@ -19,7 +23,7 @@ function About() {
           
         </p>
       </span>
-      <Skills/>
+      <Skills />
     </div>
       
     </div>
