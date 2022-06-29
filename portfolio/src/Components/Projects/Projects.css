@@ -64,7 +64,7 @@
 .Web{
     padding-bottom: 32%;
     margin-bottom: -39%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 90%);
     border-top: 1px var(--clr-secondary) solid;
 }
 .Graphic{

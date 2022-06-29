@@ -24,6 +24,11 @@
 .skills img{
     margin-inline: auto;
     margin-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+.skills img[data-visible='true']{
+    opacity: 1;
 }
 
 .skills .abstract{
@@ -31,8 +36,12 @@
     font-size: 0.4em;
     font-weight: 100;
     margin-inline: auto;
-}
+    transition: opacity 500ms ease-in;
 
+}
+.skills .abstract[data-visible='true']{
+    opacity:(0,1);
+}
 .skills p, li{
     color: var(--clr-light);
     list-style: none;
@@ -48,3 +57,11 @@
     }
 }
 
+/* .skills h3,.skills h4,.skills h5{
+    transition: transform 500ms ease-in;
+}
+
+.skills h3[data-visible='true'],.skills h4[data-visible='true'],.skills h5[data-visible='true']{
+    
+    transform: scale(0.95,1); 
+} */

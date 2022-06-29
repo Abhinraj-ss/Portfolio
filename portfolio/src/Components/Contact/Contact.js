@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div className='Contact'>
       <IconContext.Provider value={{size:'1.5rem',color:'#f3f3f3' }} >
-      <ContactForm/>
+        <ContactForm/>
       <div className="footerbox">
       <Image
           loading='lazy'
@@ -39,7 +39,7 @@ function Contact() {
           
         </div>
         <p>
-          Handcrafted by ABHIN RAJ &nbsp;  
+          Handcrafted by ABHIN RAJ  
         </p>
         <p>
           Made with passion

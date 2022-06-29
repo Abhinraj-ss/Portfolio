@@ -1,63 +1,16 @@
-import React,{useRef, useState} from 'react'
-import {Button, Image} from 'react-bootstrap'
+import React from 'react'
+import {Button} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
 
 import './Home.css'
-import logo from '../../assets/images/logo_footer.png'
-import menuIcon from '../../assets/images/menu.png'
-import closeIcon from '../../assets/images/closeIconWyt.png'
-import useElementOnScroll from '../../assets/useElementOnScroll'
 
 function Home() {
-    const [menuOpen, setMenuOpen]=useState(false)
-    const homeRef = useRef(null)
-    const isVisible = useElementOnScroll(homeRef)
-
-    var [icon,setIcon] = useState(menuIcon)
-    const handleMenuClick=()=>{
-        menuOpen? setIcon(menuIcon):setIcon(closeIcon)
-        setMenuOpen( !menuOpen)
-    }
+    
       
   return (
-    <div className='Home' ref={homeRef} >
+    <div className='Home' >
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
-        <div className="navbar" data-visible={isVisible}>
-            <a href='/'>
-                    <Image
-                    className='logo'
-                    loading='lazy'
-                    src={logo}
-                    />
-                </a>
-            <ul data-visible={menuOpen}>
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        Skills
-                    </li>
-                    <li>
-                        Projects
-                    </li>
-                    <li>
-                        About
-                    </li>
-            </ul>
-            <div className='navToogle'>
-            <Button variant='outline-primary' id='sayHello'>
-                    Say Hello
-                </Button>
-            <Image 
-                className='menuIcon' 
-                src={icon} 
-                loading='lazy'
-                height={35} 
-                width={35} 
-                onClick={handleMenuClick}/>
-            </div>
-        </div>
             <div className="content">
             <div className="intro"> 
                     <p>

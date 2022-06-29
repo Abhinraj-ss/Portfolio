@@ -7,7 +7,6 @@ import useElementOnScroll from '../../assets/useElementOnScroll'
 function About() {
   const aboutContentRef = useRef(null)
   const isVisible = useElementOnScroll(aboutContentRef)
-  console.log(isVisible)
   return (
     <div className='About'>
     <div className="about-content" data-visible={isVisible}>

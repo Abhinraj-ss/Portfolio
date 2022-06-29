@@ -1,8 +1,8 @@
 .contactForm{
-    position: relative;
+    position: absolute;
     padding-block: 4%;
     padding-inline: 10%;
-    margin-bottom: 6em;
+    bottom:50%;
 }
 .contactForm *{
     /* outline: auto; */
@@ -64,5 +64,8 @@
     }
     #messageLogo{
         margin-top: 0.5em;
+    }
+    .contactForm{
+        padding-inline: 2%;
     }
 }
