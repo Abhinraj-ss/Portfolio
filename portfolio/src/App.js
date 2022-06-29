@@ -18,6 +18,7 @@ function App() {
   const contactSection = useRef(null)
   console.log(aboutSection)
   const gotoSection = (sectionRef) =>{
+    handleMenuClick()
     window.scrollTo({
       top:sectionRef.current.offsetTop,
       behavior:"smooth"
