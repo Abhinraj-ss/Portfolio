@@ -100,7 +100,7 @@
     border:2px solid  var(--clr-secondary);
     margin-left: 40%;
     min-width:20%;
-    margin-top: -15vh;
+    margin-top: -15%;
 }
 .Projects .btnSee:hover{
     background-color: var(--clr-secondary);

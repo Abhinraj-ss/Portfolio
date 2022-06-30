@@ -1,5 +1,5 @@
 .modal-content {
-    background-color: var(--clr-bg);
+    background-color: var(--clr-dark);
 }
 .modalImg{
     position: absolute;
