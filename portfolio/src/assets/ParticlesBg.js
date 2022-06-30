@@ -35,7 +35,7 @@ function ParticlesBg() {
                 }
             },
             "color": {
-                "value": "#ffffff"
+                "value": "#DE354C"
             },
             "shadow": {
                 "enable": true,
@@ -72,7 +72,7 @@ function ParticlesBg() {
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#ffffff",
+                "color": "#DE354C",
                 "opacity": 0.4,
                 "width": 1,
                 "shadow": {
