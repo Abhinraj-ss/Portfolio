@@ -4,15 +4,20 @@ import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 
 import './Home.css'
+import ParticlesBg from '../../assets/ParticlesBg'
 
 function Home() {
     
       
   return (
     <div className='Home' >
+            <ParticlesBg id="particles"/>
+
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
             <div className="content">
-            <div className="intro"> 
+              
+            <div className="intro">
+               
                     <p>
                         -Hello
                     </p>
@@ -38,11 +43,14 @@ function Home() {
                     <a href='https://www.instagram.com/varayan._kuthira'>
                     <FaInstagram/>
                     </a>
+                    
       </div>
+      
             </div>
             
             </div>
             </IconContext.Provider>
+            
     </div>
   )
 }

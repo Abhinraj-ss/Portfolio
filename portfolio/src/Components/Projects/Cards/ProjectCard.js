@@ -1,23 +1,37 @@
-import React from 'react'
-import {Button} from 'react-bootstrap'
+import React,{useMemo} from 'react'
+import {Button, Image} from 'react-bootstrap'
 
 import './ProjectCard.css'
+import logo from '../../../assets/images/web.png'
 
-function ProjectCard( {logo}) {
-  
+function ProjectCard( projectData) {
+  console.log(projectData.projectData)
+  const data = useMemo(()=>{return(projectData.projectData)})
+  console.log(data.image,logo)
+  var style = data.color?{background: `${data.color}`}:{backgroundImage: `url(${data.image})`,backgroundSize:'cover',backgroundRepeat :'no-repeat'}
+
   return (
-    <div className="projectCard" style={{background: `url(${logo})`,backgroundSize:'cover'}} >
+    <div className="projectCard" style={style} >
+      {
+        data.color&& 
+        <div className="bg">
+          <Image src={data.image}
+          width={100}/>
+          <h2>
+          {data.title}
+          </h2>
+        </div>
+      }
         <div className="card-body">
             <p>
-              Title..
+              {data.title}
             </p>
             <span>
               <p>
-              this is a project card.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntu
+                {data.content}
               </p>
             </span>
-            <Button>
+            <Button href={data.link}>
               Visit
             </Button>
         </div>

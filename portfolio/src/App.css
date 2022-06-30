@@ -24,10 +24,11 @@ p,li{
   height:100%;
   width: 100%;
   font-size: 3rem;
- /* border: solid red;*/
- background-color: var(--clr-bg);
  position:relative;
  overflow-x: hidden;
+}
+.App[data-visible='false']{
+  background-color: var(--clr-bg);  
 }
 *{
   box-sizing: border-box;
@@ -50,7 +51,7 @@ p,li{
   display: flex;
   flex-direction: row;
   padding-inline: 0.5em; 
-  background-color: var(--clr-dark);  
+  /* background-color: var(--clr-dark);   */
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -60,6 +61,7 @@ p,li{
 }
 .navbar[data-visible='false']{
   background-color: var(--clr-bg);
+
 }
 .navbar ul{
   display: flex;

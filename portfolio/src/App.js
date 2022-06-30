@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useRef,useState } from 'react';
+import { useRef,useState,useMemo } from 'react';
 import { Button,Image } from 'react-bootstrap';
 
 import './App.css';
@@ -17,6 +17,12 @@ function App() {
   const projectsSection = useRef(null)
   const contactSection = useRef(null)
   console.log(aboutSection)
+  const options = useMemo(()=>{
+    return{
+      root :null,
+      rootMargin : '-100px',
+      threshold:0
+    }},[])
   const gotoSection = (sectionRef) =>{
     handleMenuClick()
     window.scrollTo({
@@ -25,15 +31,18 @@ function App() {
     })
   } 
   const [menuOpen, setMenuOpen]=useState(false)
-  const isVisible = useElementOnScroll(homeSection)
+  const isVisible = useElementOnScroll(homeSection,options)
 
   var [icon,setIcon] = useState(menuIcon)
   const handleMenuClick=()=>{
       menuOpen? setIcon(menuIcon):setIcon(closeIcon)
       setMenuOpen( !menuOpen)
   }
+
+
+  
   return (
-    <div className="App">
+    <div className="App" data-visible={isVisible}>
       <div className="navbar" data-visible={isVisible}>
             <a href='/'>
                     <Image
@@ -81,7 +90,6 @@ function App() {
         <Contact/>
         </div>
       </div>
-      
     </div>
   );
 }
