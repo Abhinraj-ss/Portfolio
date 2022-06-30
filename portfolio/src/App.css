@@ -9,6 +9,13 @@
   --clr-bg:#112240;
   --clr-light:#f3f3f3;
   --clr-secondary:#DE354C;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
 }
 h1{
   font-family: 'Dosis', sans-serif;
@@ -156,7 +163,7 @@ p,li{
       text-align: center;
       position:absolute;
       flex-wrap: nowrap;
-      width: 100vw;
+      width: 99vw;
       height: 100vh;
       justify-content: flex-start;
       font-size: 1.2rem;
@@ -175,12 +182,13 @@ p,li{
       transition: opacity 50ms ease-in;
   }
   .navbar ul[data-visible='true']{
-      transform: translateX(-1%);
+      transform: translateX(-4%);
       opacity: 1;
   }
   .navbar li{
       margin-inline: auto;
   }
+ 
   .navbar li:hover{
       transform: scale(1.05);
   }

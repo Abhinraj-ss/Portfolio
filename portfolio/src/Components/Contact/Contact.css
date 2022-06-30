@@ -2,11 +2,11 @@
     height: fit-content;
     position: relative;
     isolation: isolate;
-    margin-top: 30%;
 }
 .Contact *{
     /* outline: auto; */
 }
+
 
 .footerbox{
     width: 100%;
@@ -26,7 +26,7 @@
     height: 1.2em;
     margin-inline: auto;
     justify-self: center;
-    margin-top: 60vh;
+    margin-top: 15em;
 }
 .footerbox>p{
     font-size: 0.25em ;
@@ -53,4 +53,11 @@
     font-weight: 100;
     line-height: 0.5;
     margin-top: 2%;
+}
+
+
+@media screen and (max-width:840px){
+    .Contact{
+        margin-top: 48%;
+    }
 }

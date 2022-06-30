@@ -12,7 +12,7 @@ export const webProjects =[
         'content':"this is a project card.Lorem ipsum dolor sit amet consectetur adipisicing elit Maxime mollitia molestiae quas vel sint commodi repudiandae consequuntu",
         image:require('../../assets/images/percentpoll.png'),
         'color':'linear-gradient(to bottom,#fecfef 0,#9c27b0  100%)',
-        'font':'Poppins'+', sans-serif',
+        'font':'Poppins, sans-serif',
         'link': 'https://percentpoll.herokuapp.com/'
     },
     {

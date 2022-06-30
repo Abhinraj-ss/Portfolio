@@ -4,10 +4,11 @@
 
 .projectCard {
     box-shadow: 0 0 20px #192f55;
-    border-radius: 0.5vmax 0.5vmax 0.5vmax 0.5vmax ;
+    border-radius: 1vmax 1vmax 1vmax 1vmax  ;
     overflow: hidden;
     position: relative;
     height: 100%;
+    aspect-ratio: 1 / 1;
 }
 #cardImg{
     width: 100%;
@@ -28,7 +29,7 @@
 }
 .bg h2{
     width: max-content;
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 .bg:hover{
     opacity: 0;
@@ -38,8 +39,9 @@
     color: var(--clr-light);
     background: linear-gradient(to top, #1e1d2391, #16151de1);
     opacity: 0;
+    height: 100%;
     transition: opacity 200ms ease-in;
-    padding-inline: 7%;
+    padding: 10%;
 }
 .card-body:hover,:focus{
     opacity: 1;
@@ -62,11 +64,17 @@
     transform: scaleX(1);
 } */
 .card-body>span{
-    font-size: 0.28em;
+    font-size: 0.26em;
+    font-weight: 400;
+    margin-bottom: 20%;
 }
 .projectCard .btn{
     background-color: var(--clr-secondary);
     border: none;
+    position: absolute;
     font-size: 0.3em;
-    padding-inline: 10%;
+    bottom: 10%;
+    left: 0%;
+    right: 0%;
+    margin-inline: 10%;
 }

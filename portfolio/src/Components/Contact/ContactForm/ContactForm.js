@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Card,Col,Form,Button, Row, Image } from 'react-bootstrap'
+import { Card,Form,Button, Image } from 'react-bootstrap'
 import {IoSend} from 'react-icons/io5'
 
 import messageLogo from '../../../assets/images/message.png'

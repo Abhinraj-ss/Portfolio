@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Image} from 'react-bootstrap'
+import { Image} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram,FaRegCopyright} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
 

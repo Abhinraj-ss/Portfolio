@@ -1,0 +1,10 @@
+.modal-content {
+    background-color: var(--clr-bg);
+}
+.modalImg{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}

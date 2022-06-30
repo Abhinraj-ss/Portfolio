@@ -7,8 +7,6 @@ import { webProjects } from './webProjects'
 import {graphicProjects} from './graphicProjects'
 
 function Projects() {
-  // console.log(webProjects)
-  // console.log(graphicProjects)
   return (
     <div className='Projects'>
       <div className="caption Web">
@@ -28,9 +26,6 @@ function Projects() {
                 }
               )
             }
-            {/* <ProjectCard logo={webLogo}/>
-            <ProjectCard logo={webLogo}/>
-            <ProjectCard logo={webLogo}/>  */}
           </div>
         <div className="caption Graphic">
           <p>Graphic Designing Projects</p>
@@ -49,16 +44,8 @@ function Projects() {
               }
             )
           }
-
-          {/* <ProjectCard logo={graphicLogo}/>
-          <ProjectCard logo={graphicLogo}/>
-          <ProjectCard logo={graphicLogo}/>
-          <ProjectCard logo={graphicLogo}/>
-          <ProjectCard logo={graphicLogo}/>
-          <ProjectCard logo={graphicLogo}/> */}
-          
         </div>
-        <Button className='btnSee'>
+        <Button className='btnSee' href='https://www.instagram.com/varayan._kuthira'>
           See More
         </Button>
     </div>

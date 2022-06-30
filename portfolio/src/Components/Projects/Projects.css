@@ -9,22 +9,23 @@
 }
 .web{
     grid-template-columns:1fr 1fr 1fr;
-    grid-gap: 3vw;
+    grid-gap: 4vw;
 
 }
 .graphic{
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 3vw;
+    grid-gap: 4vw;
 }
 @media screen and (max-width:900px) ,(min-width:651) {
     .web{
         grid-template-columns:1fr 1fr;
-        grid-gap: 3vw;
+        grid-gap: 4vw;
     }
     .graphic{
         grid-template-columns:1fr 1fr;
-        grid-gap: 3vw;
+        grid-gap: 4vw;
+        
     }
 }
 @media screen and (max-width:650px) {
