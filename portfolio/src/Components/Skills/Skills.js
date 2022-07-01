@@ -2,8 +2,10 @@ import {React,useRef} from 'react'
 import { Card, Col, Image} from 'react-bootstrap'
 
 import './Skills.css'
-import designerIcon from '../../assets/images/vector.png'
-import developerIcon from '../../assets/images/coding.png'
+import designerDarkIcon from '../../assets/images/vector_dark.png'
+import developerDarkIcon from '../../assets/images/coding_dark.png'
+import designerLightIcon from '../../assets/images/vector_light.png'
+import developerLightIcon from '../../assets/images/coding_light.png'
 import useElementOnScroll from '../../assets/useElementOnScroll'
 
 function Skills(){
@@ -11,16 +13,17 @@ function Skills(){
   const skillsImgRef2 = useRef(null)
   const isImgVisible1 = useElementOnScroll(skillsImgRef1)
   const isImgVisible2 = useElementOnScroll(skillsImgRef2)
+  const mode = localStorage.getItem("mode")
   return (
     <Card className="skills">
             <Col>
-                <Image src={designerIcon} height={120} ref={skillsImgRef1} data-visible={isImgVisible1}/>
+                <Image src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} ref={skillsImgRef1} data-visible={isImgVisible1}/>
                 <h3 >
                     Graphic Designer
                 </h3>
                 <span>
                   <p className='abstract' >
-                  I like to design minimal but efective contents 
+                  I like to design minimal but effective contents 
                   and never hesitates to try new things. 
                   </p>
                 </span>
@@ -46,7 +49,7 @@ function Skills(){
                 </ul>
             </Col>
             <Col>
-                <Image src={developerIcon} height={120} ref={skillsImgRef2}  data-visible={isImgVisible2}/>
+                <Image src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} ref={skillsImgRef2}  data-visible={isImgVisible2}/>
                 <h3>
                     Fullstack Developer
                 </h3>

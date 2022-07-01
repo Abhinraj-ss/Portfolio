@@ -7,7 +7,7 @@
     justify-self: center;
     align-items: flex-start;
     border-radius: 1vmax 1vmax 1vmax 1vmax;
-    border: var(--clr-secondary) 2px solid;
+    border: var(--clr-secondaryToTransparent) 2px solid;
 }
 .skills .col{
     display: flex;
@@ -43,7 +43,7 @@
     opacity:(0,1);
 }
 .skills p, li{
-    color: var(--clr-light);
+    color: var(--clr-mainHeading);
     list-style: none;
 }
 

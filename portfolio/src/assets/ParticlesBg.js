@@ -2,11 +2,10 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 
-function ParticlesBg() {
+function ParticlesBg({bgColor}) {
     const particlesInit = async (main) => {
         await loadFull(main);
       };
-    
       const particlesLoaded = (container) => {
       };
   return (
@@ -16,7 +15,7 @@ function ParticlesBg() {
       loaded={particlesLoaded}
       options={{
         "background": {
-            "color": "#0a192f",
+            "color": `${bgColor}`,
             "image": "",
             "position": "50% 50%",
             "repeat": "no-repeat",
@@ -28,7 +27,7 @@ function ParticlesBg() {
         },
         "particles": {
             "number": {
-                "value": 80,
+                "value": 50,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -37,53 +36,45 @@ function ParticlesBg() {
             "color": {
                 "value": "#DE354C"
             },
-            "shadow": {
-                "enable": true,
-                "color": "#000000",
-                "blur": 5,
-                "offset": {
-                    "x": 3,
-                    "y": 3
-                }
-            },
+            
             "shape": {
                 "type": "circle"
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.4,
                 "random": false,
                 "anim": {
                     "enable": false,
                     "speed": 1,
-                    "opacity_min": 0.1,
+                    "opacity_min": 0.2,
                     "sync": false
                 }
             },
             "size": {
-                "value": 5,
+                "value": 6,
                 "random": true,
                 "anim": {
                     "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
+                    "speed": 10,
+                    "size_min": 0.4,
                     "sync": false
                 }
             },
             "line_linked": {
                 "enable": true,
-                "distance": 150,
-                "color": "#DE354C",
+                "distance": 200,
+                "color": "#482673",
                 "opacity": 0.4,
-                "width": 1,
+                "width": 3,
                 "shadow": {
-                    "enable": true,
+                    "enable": false,
                     "blur": 5,
                     "color": "#000000"
                 }
             },
             "move": {
                 "enable": true,
-                "speed": 2,
+                "speed": 1.5,
                 "direction": "none",
                 "random": false,
                 "straight": false,

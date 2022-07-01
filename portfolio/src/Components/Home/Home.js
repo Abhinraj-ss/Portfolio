@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useMemo, useRef} from 'react'
 import {Button} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
@@ -6,12 +6,26 @@ import { IconContext } from 'react-icons/lib'
 import './Home.css'
 import ParticlesBg from '../../assets/ParticlesBg'
 
-function Home() {
+function Home({mode,offsetTopContact}) {
+    const gotoSection = () =>{
+        console.log(offsetTopContact)
+        window.scrollTo({
+          top:offsetTopContact.offsetTop,
+          behavior:"smooth"
+        })
+      }
+    console.log(mode)
+    const backgroundColor=useMemo(()=>{
+        if(mode==='dark')
+            return('#0a192f')
+        else
+            return('#f3f3f3')
+    })
     
-      
+    console.log(backgroundColor)
   return (
     <div className='Home' >
-            <ParticlesBg id="particles"/>
+            <ParticlesBg id="particles" bgColor={backgroundColor}/>
 
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
             <div className="content">
@@ -26,21 +40,21 @@ function Home() {
                         I'M A FULLSTACK DEVELOPER & GRAPHIC DESIGNER.
                     </h1>
                 </div>
-                <Button>
+                <Button onClick={gotoSection}>
                     Hire Me
                 </Button>
                 <div className="socialHome">
-                    <a href='https://github.com/Abhinraj-ss'>
+                    <a rel="noreferrer" href='https://github.com/Abhinraj-ss' target='_blank'>
                     <FaGithub/>
                     </a>
-                    <a href='https://www.linkedin.com/in/abhinrajss'>
+                    <a rel="noreferrer" href='https://www.linkedin.com/in/abhinrajss' target='_blank'>
 
                     <FaLinkedin/>
                     </a>
-                    <a href='mailto:abhin.raj.s.s23@gmail.com'>
+                    <a rel="noreferrer" href='mailto:abhin.raj.s.s23@gmail.com' target='_blank'>
                     <FaEnvelope/>
                     </a>
-                    <a href='https://www.instagram.com/varayan._kuthira'>
+                    <a rel="noreferrer" href='https://www.instagram.com/varayan._kuthira' target='_blank'>
                     <FaInstagram/>
                     </a>
                     

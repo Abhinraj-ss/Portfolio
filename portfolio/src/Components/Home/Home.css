@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
 .Home{
     height: 100%;
-    /* background-color: var(--clr-dark); */
     background-color: transparent;
     border-bottom: 1px solid var(--clr-secondary);
 }
@@ -29,10 +28,6 @@ Home Content
     padding: 5% 10% 10% 10%;
     margin-inline:auto;
     max-width: 900px;
-    /* background-color: var(--clr-dark);
-    margin-bottom: 3em;
-    border: var(--clr-secondary) 2px solid;
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; */
 }
 .intro p{
     color: var(--clr-secondary);
@@ -40,7 +35,7 @@ Home Content
     margin-bottom: 0%;  
 }
 .main-heading h1{
-    color: var(--clr-light);
+    color: var(--clr-mainHeading);
     margin-top: 0;
     font-size: 1em;
     font-family: 'Exo 2', sans-serif;

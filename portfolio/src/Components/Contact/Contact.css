@@ -10,12 +10,12 @@
 
 .footerbox{
     width: 100%;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-primaryToPrimryLight);
     bottom: 0%;
     position: relative;
     display: flex;
     flex-direction: column;
-    color:var(--clr-light);
+    color:var(--clr-white);
     text-align: center;
     padding-bottom: 5%;
     z-index: -1;

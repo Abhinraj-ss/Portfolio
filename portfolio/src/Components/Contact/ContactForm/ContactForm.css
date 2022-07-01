@@ -13,14 +13,14 @@
     background-color: var(--clr-bg);
     border-radius: 0.5vmax 0.5vmax 0.5vmax 0.5vmax;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.177);
-    color: var(--clr-light);
+    color: var(--clr-mainHeading);
 
 }
 
 
 .contactForm .card-title{
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 4%;
     font-size: 0.6em;
     text-transform: capitalize;
     font-weight: 500;
@@ -33,9 +33,10 @@
     margin: 0 auto;
 }
 .contactForm .form-label{
-    font-size: 1.3rem;
+    font-size: 0.4em;
     font-weight: 150;
     margin-inline: 2%;
+    
 }
 
 .cardContent{
@@ -48,9 +49,12 @@
     padding-bottom: 5%;
     padding-inline: 5%;
 
+
 }
+
 .contactForm .btn{
     margin-top: 8%;
+    font-size: 0.3em;
 }
 
 .invalid-feedback{

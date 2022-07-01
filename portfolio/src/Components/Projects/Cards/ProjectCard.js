@@ -4,47 +4,46 @@ import {Button, Image} from 'react-bootstrap'
 import './ProjectCard.css'
 import ImageModal from './ImageModal'
 
-function ProjectCard( projectData) {
+function ProjectCard( {projectData}) {
   const [show, setShow] = useState(false)
   // console.log(projectData.projectData)
-  const data = useMemo(()=>{return(projectData.projectData)},[projectData])
-  // console.log(data.image)
-  var style = data.color?{background: `${data.color}`}:{backgroundImage: `url(${data.image})`,width:'100%',height:'100%',backgroundSize: 'cover',backgroundRepeat :'no-repeat'}
+  // console.log(projectData.image)
+  var style = projectData.color?{background: `${projectData.color}`}:{backgroundImage: `url(${projectData.image})`,width:'100%',height:'100%',backgroundSize: 'cover',backgroundRepeat :'no-repeat'}
   const handleClose = () =>{
     setShow(!show)
   }
   // console.log(show)
   return (
     <>
-    <ImageModal link={data.linkHQ} show={show} handleClose={handleClose}/>
+    <ImageModal link={projectData.linkHQ} show={show} handleClose={handleClose}/>
     <div className="projectCard" style={style} >
       {
-        data.color&& 
+        projectData.color&& 
         <div className="bg">
-          <Image loading='lazy' src={data.image}
+          <Image loading='lazy' src={projectData.image}
           width={90}/>
           <h2>
-          {data.title}
+          {projectData.title}
           </h2>
         </div>
       }
         <div className="card-body">
-          {data.color&&
+          {projectData.color&&
            <p>
-           {data.title}
+           {projectData.title}
          </p>
           }
            
             <span>
               <p>
-                {data.content}
+                {projectData.content}
               </p>
             </span>
-              {data.color ?
-                <Button href={data.link}>
+              {projectData.color ?
+                <Button target='_blank' href={projectData.link}>
                   Visit Site
                 </Button>:
-                <Button onClick={()=>setShow(true)}>
+                <Button  onClick={()=>setShow(true)}>
                   Preview
                 </Button>
               }

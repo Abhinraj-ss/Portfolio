@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
+import { Image } from 'react-bootstrap'
 
 import './About.css'
 import Skills from '../Skills/Skills'
 import useElementOnScroll from '../../assets/useElementOnScroll'
+import profile from '../../assets/images/profile.png'
 
 function About() {
   const aboutContentRef = useRef(null)
@@ -11,6 +13,7 @@ function About() {
     <div className='About'>
     <div className="about-content" data-visible={isVisible}>
     <span>
+        <Image className='profileImg' src={profile}/>
         <h1 ref={aboutContentRef} data-visible={isVisible} >
           Hi, I'm Abhin Raj.
         </h1 >

@@ -17,7 +17,7 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 4vw;
 }
-@media screen and (max-width:900px) ,(min-width:651) {
+@media screen and (max-width:900px) ,(min-width:551) {
     .web{
         grid-template-columns:1fr 1fr;
         grid-gap: 4vw;
@@ -27,8 +27,15 @@
         grid-gap: 4vw;
         
     }
+    .cards{
+        padding-inline: 13%;
+    }
+    .cards .card-body{
+        outline: auto;
+        font-size: 0.8em;
+    }
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width:550px) {
     .web{
         grid-template-columns:1fr;
         grid-gap: 3vw;
@@ -36,6 +43,13 @@
     .graphic{
         grid-template-columns: 1fr;
         grid-gap: 3vw;
+    }
+    .cards{
+        padding-inline: 15%;
+    }
+    .cards .card-body{
+        outline: auto;
+        font-size: 1em;
     }
 }
 .heading{
@@ -58,9 +72,9 @@
     position: relative;
     padding-inline: 15%;
     padding-top: 5%;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-primaryToPrimryLight);
     z-index: -1;
-    color: var(--clr-light);
+    color: var(--clr-white);
 }
 .Web{
     padding-bottom: 32%;
@@ -101,7 +115,9 @@
     margin-left: 40%;
     min-width:20%;
     margin-top: -15%;
+    color: var(--clr-WhiteToSecondary);
 }
 .Projects .btnSee:hover{
     background-color: var(--clr-secondary);
+    color: var(--clr-white);
 }

@@ -9,13 +9,17 @@
     /* outline: auto; */
 }
 .about-content{
-    color: var(--clr-light);
-    background-color: var(--clr-dark);
+    color: var(--clr-white);
+    background-color: var(--clr-primaryToPrimryLight);
     padding: 10%;
     border-radius: 0 0 1vmax 1vmax;
     text-align: center;
 }
-
+.profileImg{
+    width: 3em;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
 .about-content >span>p{
     font-size: 0.38em;
     font-weight: 100;

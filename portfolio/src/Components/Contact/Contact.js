@@ -4,7 +4,7 @@ import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram,FaRegCopyright} from 'react-i
 import { IconContext } from 'react-icons/lib'
 
 import './Contact.css'
-import logo from '../../assets/images/logo_footer.png'
+import logo from '../../assets/images/logo_light.png'
 import ContactForm from './ContactForm/ContactForm'
 
 function Contact() {
@@ -22,17 +22,17 @@ function Contact() {
           <span>Every expert was once a beginner</span>
 
         <div className="social">
-          <a href='https://github.com/Abhinraj-ss'>
+          <a rel="noreferrer" href='https://github.com/Abhinraj-ss' target='_blank'>
           <FaGithub/>
           </a>
-          <a href='https://www.linkedin.com/in/abhinrajss'>
+          <a rel="noreferrer" href='https://www.linkedin.com/in/abhinrajss' target='_blank'>
 
           <FaLinkedin/>
           </a>
-          <a href='mailto:abhin.raj.s.s23@gmail.com'>
+          <a rel="noreferrer" href='mailto:abhin.raj.s.s23@gmail.com' target='_blank'>
           <FaEnvelope/>
           </a>
-          <a href='https://www.instagram.com/varayan._kuthira'>
+          <a rel="noreferrer" href='https://www.instagram.com/varayan._kuthira' target='_blank'>
           <FaInstagram/>
           </a>
           
