@@ -142,8 +142,8 @@ p,li{
   font-size: 0.32em;
   font-weight: 600;
   gap: 2rem;
-  margin-inline: auto 1em;
-  margin-top: 1em;
+  margin-inline-start: auto;
+  margin-top: 0.7em;
 }
 
 .navbar .logo{
@@ -201,6 +201,7 @@ p,li{
   border: var(--clr-secondary) solid 2px;
   border-radius: 100vmax 100vmax;
   font-size: 0.32em;
+  margin-inline-start: 1em;
   background-color: #00ffff00;
   color:var(--clr-WhiteToSecondary);
 }
