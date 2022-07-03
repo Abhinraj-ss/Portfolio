@@ -3,6 +3,8 @@ import { useRef,useState,useMemo, useEffect } from 'react';
 import { Button,Image } from 'react-bootstrap';
 import {MdOutlineDarkMode,MdOutlineLightMode} from 'react-icons/md'
 import { IconContext } from 'react-icons/lib'
+import Lottie from 'react-lottie';
+import animationData from './assets/images/ar-logo-ae.json';
 
 
 import './App.css';
@@ -15,13 +17,21 @@ import logoDark from './assets/images/logo_dark.png'
 import menuIcon from './assets/images/menu.png'
 import closeIcon from './assets/images/closeIconWyt.png'
 import useElementOnScroll from './assets/useElementOnScroll';
+
 function App() {
   const homeSection = useRef(null)
   const aboutSection = useRef(null)
   const projectsSection = useRef(null)
   const contactSection = useRef(null)
   const [mode,setMode] = useState('dark')
-  console.log(aboutSection)
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
   const options = useMemo(()=>{
     return{
       root :null,
@@ -53,6 +63,12 @@ function App() {
   
   return (
     <div className="App" data-visible={isVisible} data-mode={mode}>
+      <div className="splash">
+        <Lottie className='logo_splash'
+	      options={defaultOptions}
+      />
+      </div>
+      
       <div className="navbar" data-visible={isVisible}>
             <a href='/'>
                     <Image

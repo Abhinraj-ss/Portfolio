@@ -1,29 +1,31 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Image } from 'react-bootstrap'
+import {Fade,Flip} from 'react-reveal';
 
 import './About.css'
 import Skills from '../Skills/Skills'
-import useElementOnScroll from '../../assets/useElementOnScroll'
 import profile from '../../assets/images/profile.png'
 
 function About() {
-  const aboutContentRef = useRef(null)
-  const isVisible = useElementOnScroll(aboutContentRef)
   return (
     <div className='About'>
-    <div className="about-content" data-visible={isVisible}>
+    <div className="about-content"  >
     <span>
         <Image className='profileImg' src={profile}/>
-        <h1 ref={aboutContentRef} data-visible={isVisible} >
+        <Fade top>
+        <h1 >
           Hi, I'm Abhin Raj.
         </h1 >
-        <p ref={aboutContentRef} data-visible={isVisible}>
+        </Fade>
+        <Flip top>
+        <p >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
           , vero omnis! Dignissimos repellat labore nulla omnis ipsa 
           consequuntur atque voluptatum tempora, asperiores totam accusamus, 
           culpa iste dolores corporis debitis perspiciatis fuga deserunt. 
           
         </p>
+        </Flip>
       </span>
       <Skills />
     </div>

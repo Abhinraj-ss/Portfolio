@@ -1,24 +1,25 @@
-import {React,useRef} from 'react'
+import React from 'react'
 import { Card, Col, Image} from 'react-bootstrap'
+import HeadShake from 'react-reveal/HeadShake'
+import Fade from 'react-reveal'
 
 import './Skills.css'
 import designerDarkIcon from '../../assets/images/vector_dark.png'
 import developerDarkIcon from '../../assets/images/coding_dark.png'
 import designerLightIcon from '../../assets/images/vector_light.png'
 import developerLightIcon from '../../assets/images/coding_light.png'
-import useElementOnScroll from '../../assets/useElementOnScroll'
 
 function Skills(){
-  const skillsImgRef1 = useRef(null)
-  const skillsImgRef2 = useRef(null)
-  const isImgVisible1 = useElementOnScroll(skillsImgRef1)
-  const isImgVisible2 = useElementOnScroll(skillsImgRef2)
   const mode = localStorage.getItem("mode")
+  
   return (
     <Card className="skills">
             <Col>
-                <Image src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} ref={skillsImgRef1} data-visible={isImgVisible1}/>
-                <h3 >
+            <HeadShake top>
+                <Image loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
+                </HeadShake>
+                <Fade left>
+                <h3>
                     Graphic Designer
                 </h3>
                 <span>
@@ -47,9 +48,13 @@ function Skills(){
                     Photoshop
                   </li>
                 </ul>
+                </Fade>
             </Col>
             <Col>
-                <Image src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} ref={skillsImgRef2}  data-visible={isImgVisible2}/>
+            <HeadShake top>
+                <Image loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
+                </HeadShake>
+                <Fade  right>
                 <h3>
                     Fullstack Developer
                 </h3>
@@ -89,6 +94,7 @@ function Skills(){
                     MySQL
                   </li>
                 </ul>
+                </Fade>
             </Col>
     </Card>
   )

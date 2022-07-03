@@ -3,6 +3,7 @@ import { Image} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram,FaRegCopyright} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
 
+
 import './Contact.css'
 import logo from '../../assets/images/logo_light.png'
 import ContactForm from './ContactForm/ContactForm'

@@ -24,12 +24,8 @@
 .skills img{
     margin-inline: auto;
     margin-bottom: 2rem;
-    opacity: 0;
-    transition: opacity 500ms ease-in;
 }
-.skills img[data-visible='true']{
-    opacity: 1;
-}
+
 
 .skills .abstract{
     margin-top: 0.5em;

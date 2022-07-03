@@ -1,4 +1,5 @@
 import React from 'react'
+import Roll from 'react-reveal'
 
 import './Projects.css'
 import ProjectCard from './Cards/ProjectCard'
@@ -18,11 +19,15 @@ function Projects() {
             </p>
           </span>
         </div> 
+        
           <div className="web cards">
             {
               webProjects.map(
                 (projectData,index)=>{
-                  return(<ProjectCard key={index} projectData={projectData}/>)
+                  return(
+                    <Roll left>
+                  <ProjectCard key={index} projectData={projectData}/>
+                  </Roll>)
                 }
               )
             }
@@ -40,7 +45,11 @@ function Projects() {
           {
             graphicProjects.map(
               (projectData,index)=>{
-                return(<ProjectCard key={index} projectData={projectData}/>)
+                return(
+                  <Roll right>
+                <ProjectCard key={index} projectData={projectData}/>
+                </Roll>
+                )
               }
             )
           }
