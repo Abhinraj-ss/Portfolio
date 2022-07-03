@@ -7,6 +7,7 @@
     padding-inline: 10%;
     margin-block: 8%;
 }
+
 .web{
     grid-template-columns:1fr 1fr 1fr;
     grid-gap: 4vw;
@@ -31,7 +32,6 @@
         padding-inline: 13%;
     }
     .cards .card-body{
-        outline: auto;
         font-size: 0.8em;
     }
 }
@@ -48,7 +48,6 @@
         padding-inline: 15%;
     }
     .cards .card-body{
-        outline: auto;
         font-size: 1em;
     }
 }

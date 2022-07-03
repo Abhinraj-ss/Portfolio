@@ -46,7 +46,7 @@ function Projects() {
             graphicProjects.map(
               (projectData,index)=>{
                 return(
-                  <Roll right>
+                  <Roll right >
                 <ProjectCard key={index} projectData={projectData}/>
                 </Roll>
                 )
@@ -54,7 +54,7 @@ function Projects() {
             )
           }
         </div>
-        <Button className='btnSee' href='https://www.instagram.com/varayan._kuthira'>
+        <Button className='btnSee' href='https://www.instagram.com/varayan._kuthira' target="_blank" rel="noopener noreferrer">
           See More
         </Button>
     </div>

@@ -3,8 +3,8 @@ import { useRef,useState,useMemo, useEffect } from 'react';
 import { Button,Image } from 'react-bootstrap';
 import {MdOutlineDarkMode,MdOutlineLightMode} from 'react-icons/md'
 import { IconContext } from 'react-icons/lib'
-import Lottie from 'react-lottie';
-import animationData from './assets/images/ar-logo-ae.json';
+import Lottie from "lottie-react";
+import logoAnimate from './assets/images/ar-logo-ae.json';
 
 
 import './App.css';
@@ -12,8 +12,8 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
-import logoLight from './assets/images/logo_light.png'
-import logoDark from './assets/images/logo_dark.png'
+import logoLight from './assets/images/logo_light.svg'
+import logoDark from './assets/images/logo_dark.svg'
 import menuIcon from './assets/images/menu.png'
 import closeIcon from './assets/images/closeIconWyt.png'
 import useElementOnScroll from './assets/useElementOnScroll';
@@ -24,14 +24,6 @@ function App() {
   const projectsSection = useRef(null)
   const contactSection = useRef(null)
   const [mode,setMode] = useState('dark')
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
   const options = useMemo(()=>{
     return{
       root :null,
@@ -63,23 +55,21 @@ function App() {
   
   return (
     <div className="App" data-visible={isVisible} data-mode={mode}>
+         
       <div className="splash">
-        <Lottie className='logo_splash'
-	      options={defaultOptions}
-      />
+        <Lottie className='logo_splash' animationData={logoAnimate} loop={false}/>
       </div>
       
       <div className="navbar" data-visible={isVisible}>
             <a href='/'>
                     <Image
                     className='logo'
-                    loading='lazy'
                     src={(mode==='dark')? logoLight:logoDark}
                     />
                 </a>
             <ul data-visible={menuOpen}>
                     
-                    <li onClick={()=>gotoSection(homeSection)}>
+                    <li  onClick={()=>gotoSection(homeSection)}>
                         Home
                     </li>
                     <li onClick={()=>gotoSection(aboutSection)}>

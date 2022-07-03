@@ -39,6 +39,7 @@ Home Content
     margin-top: 0;
     font-size: 1em;
     font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
 }
 .intro .btn{
     background-color: var(--clr-secondary);

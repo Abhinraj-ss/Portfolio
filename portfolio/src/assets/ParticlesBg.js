@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 
-function ParticlesBg({bgColor}) {
+function ParticlesBg({bgColor,zIndex}) {
     const particlesInit = async (main) => {
         await loadFull(main);
       };
@@ -23,7 +23,7 @@ function ParticlesBg({bgColor}) {
         },
         "fullScreen": {
             "enable": true,
-            "zIndex": -1
+            "zIndex": `${zIndex}`
         },
         "particles": {
             "number": {

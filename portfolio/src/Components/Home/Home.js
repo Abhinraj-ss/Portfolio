@@ -2,7 +2,7 @@ import React,{useMemo} from 'react'
 import {Button} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
-import { Bounce } from 'react-reveal'
+import Jello from 'react-reveal/Jello'
 
 import './Home.css'
 import ParticlesBg from '../../assets/ParticlesBg'
@@ -23,7 +23,7 @@ function Home({mode,offsetTopContact}) {
     },[mode])
   return (
     <div className='Home' >
-            <ParticlesBg id="particles" bgColor={backgroundColor}/>
+            <ParticlesBg id="particles" bgColor={backgroundColor} zIndex={-1}/>
             
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
             <div className="content">
@@ -34,13 +34,13 @@ function Home({mode,offsetTopContact}) {
                 <div className="main-heading">
 
                     <h1>
-                        I'M A FULLSTACK DEVELOPER & GRAPHIC DESIGNER.
+                        I'M A FULLSTACK DEVELOPER & A GRAPHIC DESIGNER.
                     </h1>
                 </div>
-                <Button onClick={gotoSection}>
-                    Hire Me
-                </Button>
-                <Bounce left>
+                  <Button onClick={gotoSection}>
+                      Hire Me
+                  </Button>
+                <Jello>
                 <div className="socialHome">
                     <a rel="noreferrer" href='https://github.com/Abhinraj-ss' target='_blank'>
                     <FaGithub/>
@@ -57,7 +57,7 @@ function Home({mode,offsetTopContact}) {
                     </a>
                     
       </div>
-      </Bounce>
+      </Jello>
             </div>
             
             </div>

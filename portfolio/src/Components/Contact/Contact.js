@@ -1,11 +1,11 @@
 import React from 'react'
 import { Image} from 'react-bootstrap'
-import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram,FaRegCopyright} from 'react-icons/fa' 
+import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
 
 
 import './Contact.css'
-import logo from '../../assets/images/logo_light.png'
+import logo from '../../assets/images/logo_light.svg'
 import ContactForm from './ContactForm/ContactForm'
 
 function Contact() {

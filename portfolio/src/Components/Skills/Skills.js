@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Col, Image} from 'react-bootstrap'
-import HeadShake from 'react-reveal/HeadShake'
-import Fade from 'react-reveal'
+import Pulse  from 'react-reveal/Pulse'
+import Bounce from 'react-reveal/Bounce'
 
 import './Skills.css'
 import designerDarkIcon from '../../assets/images/vector_dark.png'
@@ -15,10 +15,10 @@ function Skills(){
   return (
     <Card className="skills">
             <Col>
-            <HeadShake top>
+            <Pulse  top>
                 <Image loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
-                </HeadShake>
-                <Fade left>
+                </Pulse >
+                <Bounce cascade>
                 <h3>
                     Graphic Designer
                 </h3>
@@ -48,13 +48,13 @@ function Skills(){
                     Photoshop
                   </li>
                 </ul>
-                </Fade>
+                </Bounce>
             </Col>
             <Col>
-            <HeadShake top>
+            <Pulse  top>
                 <Image loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
-                </HeadShake>
-                <Fade  right>
+                </Pulse >
+                <Bounce cascade>
                 <h3>
                     Fullstack Developer
                 </h3>
@@ -94,7 +94,7 @@ function Skills(){
                     MySQL
                   </li>
                 </ul>
-                </Fade>
+                </Bounce>
             </Col>
     </Card>
   )

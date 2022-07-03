@@ -57,32 +57,52 @@ p,li{
   outline: none;
 }
 .splash{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+  position: fixed;
+  width:100vw;
   height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--clr-primaryToPrimryLight);
-  z-index: 9999;
-  animation: slidein 3s 1 linear forwards;
-  animation-delay: 4.5s;
-  overflow-y: hidden;
+  background: #0a192f;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1001;
+  animation: slideOut 1s 1 linear forwards;
+  animation-delay: 4.9s;
 }
-
-@keyframes slidein {
+@keyframes slideOut {
   from {
-    margin-top: 0%;
+    z-index: 1001;
   }
 
   to {
-    margin-top: -500%;
+    z-index: -1;
   }
-}
-.splash div{
-  width: 1em;
+} 
+
+.logo_splash{
+  position: absolute;
+  left: 50vw;
+  top: 45vh;
+  transform: translate(-50%,-50%);
+  width: 5em;
   height: auto;
+  animation: slideToPage 1s 1 linear forwards;
+  animation-delay: 4.7s;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 10000;
+}
+@keyframes slideToPage{
+  from{
+    left:50vw;
+    top:50vh;
+    width: 5em;
+  }
+  to{
+    top: 8vh;
+    left: 1.2em;
+    width: 1.8em;
+  }
 }
 .pages{
   flex-direction: column;
@@ -97,10 +117,11 @@ p,li{
   display: flex;
   flex-direction: row;
   padding-inline: 0.5em; 
-  /* background-color: var(--clr-primary);   */
+  /* background-color: var(--clr-primaryToPrimryLight);   */
   width: 100%;
   position: fixed;
   z-index: 1000;
+  --bs-navbar-padding-y:0;
 }
 .navbar *{
   /* outline:auto; */
@@ -122,12 +143,25 @@ p,li{
   font-weight: 600;
   gap: 2rem;
   margin-inline: auto 1em;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .navbar .logo{
   width: 1.8em;
   cursor: pointer;
+  opacity: 0;
+  padding-top: 0.2em;
+  vertical-align: top;
+  animation: logoOpacity 100ms ease-in forwards;
+  animation-delay: 5.5s;
+}
+@keyframes logoOpacity{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 .navbar a{
   text-decoration: none;
@@ -162,7 +196,6 @@ p,li{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-top: 0.2em;
 }
 .navbar .btn{
   border: var(--clr-secondary) solid 2px;
