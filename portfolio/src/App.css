@@ -203,6 +203,7 @@ p,li{
   border: var(--clr-secondary) solid 2px;
   border-radius: 100vmax 100vmax;
   font-size: 0.32em;
+  font-weight: 500;
   margin-inline-start: 1em;
   background-color: #00ffff00;
   color:var(--clr-WhiteToSecondary);
@@ -265,8 +266,6 @@ p,li{
       padding-block: 25vh;
       top: -1em;
       right: -2em;
-      /* border-radius: 2vmax 2vmax 2vmax 2vmax; */
-      /* border: 0.1em var(--clr-secondary) solid; */
       transform: translateX(150%);
       z-index: 998;
       opacity: 0;

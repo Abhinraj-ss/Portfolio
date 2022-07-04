@@ -22,11 +22,11 @@ function Skills({mode}){
                 </h3>
                 <span>
                   <p className='abstract' >
-                  I like to design minimal but effective contents. 
+                  I design minimal but effective contents. 
                   </p>
                 </span>
                 <h5 >
-                  What I'm <wbr/>Doing
+                  What I <wbr/>Do
                 </h5>
                 <p className='abstract' >
                   Icons, Logos, Portraits, Vectors 
@@ -60,9 +60,7 @@ function Skills({mode}){
                 </h3>
                 <span>
                   <p className='abstract' >
-                  I like to design layouts in a paper 
-                  and turning it into a plane on 
-                  the browser
+                  I design in a paper and renders it in a browser.
                   </p>
                 </span>
                 <h5 >

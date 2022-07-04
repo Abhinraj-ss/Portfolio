@@ -112,7 +112,7 @@ function ContactForm() {
                             {
                             submit &&
                             <>
-                            Sucess&nbsp;
+                            Success&nbsp;
                             <IoCheckmarkDoneSharp/>
                             </>
                             }

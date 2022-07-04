@@ -14,7 +14,7 @@ function Projects() {
           <p>Web Development Projects</p>
           <span>
             <p>
-            Here are some fullstack web projects on which I have been working on recently. Check it out.  
+            Here are some fullstack web projects on which I have been working recently.
             </p>
           </span>
         </div> 
@@ -35,7 +35,7 @@ function Projects() {
           <p>Graphic Design Projects</p>
           <span>
             <p>
-            Here are some graphic design projects, I have been working on recently. Check it out.            </p>
+            Here are some graphic design projects, I have been working recently.</p>
           </span>
         </div> 
         <div className="graphic cards">

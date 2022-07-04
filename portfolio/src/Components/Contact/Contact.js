@@ -12,7 +12,7 @@ function Contact() {
 
   return (
     <div className='Contact'>
-      <IconContext.Provider value={{size:'1.5rem',color:'#f3f3f3' }} >
+      <IconContext.Provider value={{size:'1.4rem',color:'#f3f3f3' }} >
         <ContactForm/>
       <div className="footerbox">
       <Image
@@ -21,7 +21,7 @@ function Contact() {
           id='footerLogo'
           src={logo}
           />
-          <span>Every expert was once a beginner</span>
+          <span>I am a web developer,<wbr/> what is your superpower ??</span>
 
         <div className="social">
           <a rel="noreferrer" href='https://github.com/Abhinraj-ss' target='_blank'>
@@ -41,11 +41,11 @@ function Contact() {
           
         </div>
         <p>
-          Handcrafted by ABHIN RAJ  
+        Doodled by ABHIN RAJ  
         </p>
-        <p>
+        {/* <p>
           Made with passion
-        </p>
+        </p> */}
 
      
       </div>

@@ -19,7 +19,7 @@ function About({mode}) {
         </Fade>
         <Flip top>
         <p >
-        I am a <b>FULLSTACK WEB DEVELOPER</b> and a <b>GRAPHIC DESIGNER</b>. Highly passionate about newer design techniques and never hesitates to try those in my works. Since I am a <b>GRAPHIC DESIGNER</b>, I used to design static logos as well as animated ones for my websites Myself.   
+        A <b>FULLSTACK WEB DEVELOPER</b> and  <b>GRAPHIC DESIGNER</b>. Ardently passionate on modern design techniques who never hesitates to try it out  in my works.As a <b>GRAPHIC DESIGNER</b>, I design static and animated logos  for my websites and Myself.        
         </p>
         </Flip>
       </span>
