@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Card, Col, Image} from 'react-bootstrap'
 import Pulse  from 'react-reveal/Pulse'
 import Bounce from 'react-reveal/Bounce'
