@@ -14,8 +14,9 @@ import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
 import logoLight from './assets/images/logo_light.svg'
 import logoDark from './assets/images/logo_dark.svg'
-import menuIcon from './assets/images/menu.png'
-import closeIcon from './assets/images/closeIconWyt.png'
+import menuLight from './assets/images/menu_light.svg'
+import menuDark from './assets/images/menu_dark.svg'
+import closeLight from './assets/images/closeIconWyt.svg'
 import useElementOnScroll from './assets/useElementOnScroll';
 
 function App() {
@@ -40,16 +41,19 @@ function App() {
   const [menuOpen, setMenuOpen]=useState(false)
   const isVisible = useElementOnScroll(homeSection,options)
 
-  var [icon,setIcon] = useState(menuIcon)
+  var icon = useMemo(()=>{return menuOpen? closeLight:((mode==='dark')?menuLight:menuDark)},[mode,menuOpen])
   const handleMenuClick=()=>{
-      menuOpen? setIcon(menuIcon):setIcon(closeIcon)
-      setMenuOpen( !menuOpen)
+      console.log(menuOpen)
+        setMenuOpen( !menuOpen)
   }
 
   useEffect(
     ()=>{
-      localStorage.setItem("mode",mode)
-    },[mode]
+      window.scrollTo({
+        top:homeSection.current.offsetTop,
+        behavior:"smooth"
+      })
+    },[]
   )
 
   
@@ -81,7 +85,7 @@ function App() {
                     
             </ul>
             <div className='navToogle'>
-            <Button variant='outline-primary' id='sayHello' onClick={()=>gotoSection(contactSection)}>
+            <Button variant='outline-primary' id='sayHello' data-visible={menuOpen} onClick={()=>gotoSection(contactSection)}>
                     Say Hello
                 </Button>
                 <IconContext.Provider value={{size:'1.5rem',color:'#f3f3f3' }}  >
@@ -105,7 +109,7 @@ function App() {
         <Home mode={mode} offsetTopContact={contactSection.current}/>
         </div>
         <div ref={aboutSection}>
-        <About />
+        <About mode={mode} />
         </div>
         <div ref={projectsSection}>
         <Projects/>

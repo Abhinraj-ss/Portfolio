@@ -59,11 +59,16 @@
     position: absolute;
    
 }
-
 .card-body>span{
     font-size: 0.26em;
     font-weight: 400;
     margin-bottom: 20%;
+    overflow-wrap: break-word;
+}
+.card-body>span>p>b{
+    color: var(--clr-secondary);
+    font-weight: 800;
+    font-size: 1.1em;
 }
 .projectCard .btn{
     background-color: var(--clr-secondary);

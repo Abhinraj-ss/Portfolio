@@ -27,7 +27,7 @@ function ParticlesBg({bgColor,zIndex}) {
         },
         "particles": {
             "number": {
-                "value": 60,
+                "value": 50,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -62,7 +62,7 @@ function ParticlesBg({bgColor,zIndex}) {
             },
             "line_linked": {
                 "enable": true,
-                "distance": 200,
+                "distance": 300,
                 "color": "#482673",
                 "opacity": 0.4,
                 "width": 3,
@@ -74,7 +74,7 @@ function ParticlesBg({bgColor,zIndex}) {
             },
             "move": {
                 "enable": true,
-                "speed": 1.5,
+                "speed": 1,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -115,7 +115,7 @@ function ParticlesBg({bgColor,zIndex}) {
                     "size": 40,
                     "duration": 2,
                     "opacity": 0.8,
-                    "speed": 3
+                    "speed": 1
                 },
                 "repulse": {
                     "distance": 200

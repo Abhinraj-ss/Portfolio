@@ -1,45 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Card, Col, Image} from 'react-bootstrap'
 import Pulse  from 'react-reveal/Pulse'
 import Bounce from 'react-reveal/Bounce'
 
 import './Skills.css'
-import designerDarkIcon from '../../assets/images/vector_dark.png'
-import developerDarkIcon from '../../assets/images/coding_dark.png'
-import designerLightIcon from '../../assets/images/vector_light.png'
-import developerLightIcon from '../../assets/images/coding_light.png'
+import designerDarkIcon from '../../assets/images/vector_dark.svg'
+import developerDarkIcon from '../../assets/images/coding_dark.svg'
+import designerLightIcon from '../../assets/images/vector_light.svg'
+import developerLightIcon from '../../assets/images/coding_light.svg'
 
-function Skills(){
-  const mode = localStorage.getItem("mode")
-  
+function Skills({mode}){
   return (
     <Card className="skills">
             <Col>
             <Pulse  top>
-                <Image loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
+            <Image loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
                 </Pulse >
                 <Bounce cascade>
                 <h3>
-                    Graphic Designer
+                    Graphic <wbr/> Designer
                 </h3>
                 <span>
                   <p className='abstract' >
-                  I like to design minimal but effective contents 
-                  and never hesitates to try new things. 
+                  I like to design minimal but effective contents. 
                   </p>
                 </span>
                 <h5 >
-                  What I'm Doing
+                  What I'm <wbr/>Doing
                 </h5>
                 <p className='abstract' >
                   Icons, Logos, Portraits, Vectors 
                 </p>
                 <h4>
-                  My Design Tools
+                  Design <wbr/>Tools
                 </h4>
                 <ul className='abstract'>
                   <li>
                     Illustrator
+                  </li>
+                  <li>
+                    After Effects
                   </li>
                   <li>
                     Gimp
@@ -52,11 +52,11 @@ function Skills(){
             </Col>
             <Col>
             <Pulse  top>
-                <Image loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
+            <Image loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
                 </Pulse >
                 <Bounce cascade>
                 <h3>
-                    Fullstack Developer
+                    Fullstack <wbr/>Developer
                 </h3>
                 <span>
                   <p className='abstract' >
@@ -72,7 +72,7 @@ function Skills(){
                   CSS, HTML, Python, ReactJS, SQL
                 </p>
                 <h4>
-                  Development Tools
+                  Dev <wbr/>Tools
                 </h4>
                 <ul className='abstract' >
                   <li>

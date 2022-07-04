@@ -22,8 +22,12 @@
 }
 .about-content >span>p{
     font-size: 0.38em;
-    font-weight: 100;
+    font-weight: 50;
     margin-bottom: 15vh;
+}
+.about-content >span>p>b{
+    font-weight: 600;
+    color: var(--clr-secondary);
 }
 .about-content h1{
     margin-bottom: 3vh;

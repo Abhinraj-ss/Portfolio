@@ -22,19 +22,15 @@ function Home({mode,offsetTopContact}) {
             return('#f3f3f3')
     },[mode])
   return (
-    <div className='Home' >
+    <div className='home' >
             <ParticlesBg id="particles" bgColor={backgroundColor} zIndex={-1}/>
             
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
-            <div className="content">
             <div className="intro">
-                    <p>
-                        -Hello
-                    </p>
                 <div className="main-heading">
 
                     <h1>
-                        I'M A FULLSTACK DEVELOPER & A GRAPHIC DESIGNER.
+                        Fullstack Web <wbr/>Developer &<br/> Graphic Designer.
                     </h1>
                 </div>
                   <Button onClick={gotoSection}>
@@ -60,7 +56,6 @@ function Home({mode,offsetTopContact}) {
       </Jello>
             </div>
             
-            </div>
             </IconContext.Provider>
             
     </div>

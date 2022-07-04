@@ -56,6 +56,11 @@ p,li{
 :focus{
   outline: none;
 }
+
+/*****************
+    splash screen 
+******************/
+
 .splash{
   position: fixed;
   width:100vw;
@@ -66,8 +71,8 @@ p,li{
   -o-background-size: cover;
   background-size: cover;
   z-index: 1001;
-  animation: slideOut 1s 1 linear forwards;
-  animation-delay: 4.9s;
+  animation: slideOut 100ms 1 linear forwards;
+  animation-delay: 5500ms;
 }
 @keyframes slideOut {
   from {
@@ -99,15 +104,12 @@ p,li{
     width: 5em;
   }
   to{
-    top: 8vh;
-    left: 1.2em;
-    width: 1.8em;
+    top: 0.6em;
+    left: 1.35em;
+    width: 2.35em;
   }
 }
-.pages{
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
+
 
 /****************
     Navbar
@@ -116,8 +118,7 @@ p,li{
 .navbar{  
   display: flex;
   flex-direction: row;
-  padding-inline: 0.5em; 
-  /* background-color: var(--clr-primaryToPrimryLight);   */
+  padding-inline: 0.5em;   
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -143,7 +144,7 @@ p,li{
   font-weight: 600;
   gap: 2rem;
   margin-inline-start: auto;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 .navbar .logo{
@@ -167,7 +168,7 @@ p,li{
   text-decoration: none;
 }
 .navbar li{
-  padding-top: 2%;
+  display: table;
   cursor: pointer;
   width: fit-content;
   position: relative;
@@ -235,6 +236,9 @@ p,li{
       z-index: 999;
       font-size: 0.3em;
   }
+  .navbar .btn[data-visible = 'true']{
+    color: var(--clr-white);
+  }
   .navbar .menuIcon{
       display: block;
       cursor: pointer;
@@ -245,7 +249,7 @@ p,li{
   
   .navbar ul{
       flex-direction: column;
-      background-color: var(--clr-primary);
+      background-color: var(--clr-primaryToPrimryLight);
       list-style: none;
       text-align: center;
       position:absolute;
@@ -267,12 +271,14 @@ p,li{
       opacity: 0;
       transition: transform 350ms ease-out;
       transition: opacity 50ms ease-in;
+      transition-delay: 80ms;
   }
   .navbar ul[data-visible='true']{
       transform: translateX(-4%);
       opacity: 1;
   }
   .navbar li{
+    color: var(--clr-white);
       margin-inline: auto;
   }
  
@@ -294,4 +300,12 @@ p,li{
       transition: transform 150ms ease-in-out;
       transition: transform 150ms ease-in-out;
   }
+}
+/*************
+    pages
+*************/
+
+.pages{
+  flex-direction: column;
+  flex-wrap: nowrap;
 }

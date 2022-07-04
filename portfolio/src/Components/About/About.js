@@ -6,7 +6,7 @@ import './About.css'
 import Skills from '../Skills/Skills'
 import profile from '../../assets/images/profile.png'
 
-function About() {
+function About({mode}) {
   return (
     <div className='About'>
     <div className="about-content"  >
@@ -19,15 +19,11 @@ function About() {
         </Fade>
         <Flip top>
         <p >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-          , vero omnis! Dignissimos repellat labore nulla omnis ipsa 
-          consequuntur atque voluptatum tempora, asperiores totam accusamus, 
-          culpa iste dolores corporis debitis perspiciatis fuga deserunt. 
-          
+        I am a <b>FULLSTACK WEB DEVELOPER</b> and a <b>GRAPHIC DESIGNER</b>. Highly passionate about newer design techniques and never hesitates to try those in my works. Since I am a <b>GRAPHIC DESIGNER</b>, I used to design static logos as well as animated ones for my websites Myself.   
         </p>
         </Flip>
       </span>
-      <Skills />
+      <Skills mode={mode} />
     </div>
       
     </div>

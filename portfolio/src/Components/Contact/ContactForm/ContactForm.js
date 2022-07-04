@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { Card,Form,Button, Image } from 'react-bootstrap'
 import {IoSend} from 'react-icons/io5'
 
-import messageLogo from '../../../assets/images/message.png'
+import messageLogo from '../../../assets/images/message.svg'
 import './ContactForm.css'
 
 function ContactForm() {

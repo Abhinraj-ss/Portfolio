@@ -14,8 +14,7 @@ function Projects() {
           <p>Web Development Projects</p>
           <span>
             <p>
-              this is a demo caption.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-              molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+            Here are some fullstack web projects on which I have been working on recently. Check it out.  
             </p>
           </span>
         </div> 
@@ -33,12 +32,10 @@ function Projects() {
             }
           </div>
         <div className="caption Graphic">
-          <p>Graphic Designing Projects</p>
+          <p>Graphic Design Projects</p>
           <span>
             <p>
-              this is a demo caption.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-              molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            </p>
+            Here are some graphic design projects, I have been working on recently. Check it out.            </p>
           </span>
         </div> 
         <div className="graphic cards">

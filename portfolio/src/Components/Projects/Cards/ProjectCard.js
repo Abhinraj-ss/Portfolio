@@ -30,9 +30,10 @@ function ProjectCard( {projectData}) {
            {projectData.title}
          </p>
           }
-           
+            
             <span>
               <p>
+                {projectData.keywords}<br/>
                 {projectData.content}
               </p>
             </span>

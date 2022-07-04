@@ -21,15 +21,15 @@
 .contactForm .card-title{
     text-align: center;
     margin-top: 4%;
-    font-size: 0.6em;
+    font-size: 0.7em;
     text-transform: capitalize;
     font-weight: 500;
-    color: var(--clr-secondary);
+    color: var(--clr-WhiteToSecondary);
 }
 #messageLogo{
     display: flex;
     height: auto;
-    width: 80%;
+    width: 4.5em;
     margin: 0 auto;
 }
 .contactForm .form-label{
