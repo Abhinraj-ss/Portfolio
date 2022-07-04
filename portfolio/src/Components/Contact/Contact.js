@@ -16,6 +16,7 @@ function Contact() {
         <ContactForm/>
       <div className="footerbox">
       <Image
+          alt='logo'
           loading='lazy'
           id='footerLogo'
           src={logo}

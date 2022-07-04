@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
-import { Card,Form,Button, Image } from 'react-bootstrap'
-import {IoSend} from 'react-icons/io5'
+import React,{useState,useRef} from 'react'
+import { Card,Form,Button, Image , Alert} from 'react-bootstrap'
+import {IoSend,IoCheckmarkDoneSharp} from 'react-icons/io5'
+import emailjs from '@emailjs/browser';
 
 import messageLogo from '../../../assets/images/message.svg'
 import './ContactForm.css'
@@ -17,15 +18,41 @@ function ContactForm() {
         else{
           event.preventDefault();
           event.stopPropagation();
-          handleSubmit()
+          sendEmail(event)
         }
         setValidated(true);
       }
-    const handleSubmit =()=>{
-
-    }
+      const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(e)
+         emailjs.sendForm('service_tiw9p62', 'template_yqqlnkt', e.target, 'dW1sG2gZRY9izbKN2')
+          .then((result) => {
+               console.log(result.text);
+           }, (error) => {
+               console.log(error.text);
+           });
+        setSubmit(true)
+        setTimeout(() => {
+            document.getElementById("contact").reset();
+            setValidated(false);
+            setSubmit(false)
+          }, 5000);
+      };
+      
+      
+      const handleClearForm = () =>{
+        document.getElementById("contact").reset();
+        setValidated(false);
+        setSubmit(false)
+      }
+      
   return (
     <div className="contactForm">
+        {submit&&
+            <Alert  variant='success' onClose={handleClearForm} dismissible>
+                I will reach you out soon!
+            </Alert>
+        }
         <Card>
             <Card.Title>
                 Get In Touch
@@ -39,10 +66,11 @@ function ContactForm() {
                     src={messageLogo}/>
                 </div>
                 <div className='cForm'>
-                    <Form noValidate validated={validated} onSubmit={handleValidate}>
+                    <Form id='contact' noValidate validated={validated} onSubmit={handleValidate}>
                         <Form.Group className='my-0'>
                             <Form.Label>Name</Form.Label>
                             <Form.Control
+                                name='name'
                                 placeholder="Name"
                                 type="text"
                                 required 
@@ -54,6 +82,7 @@ function ContactForm() {
                         <Form.Group className='my-0'>
                             <Form.Label>Email address</Form.Label>
                             <Form.Control
+                                name='email'
                                 placeholder="Email"
                                 type="email"
                                 required 
@@ -65,6 +94,7 @@ function ContactForm() {
                         <Form.Group className='my-0'>
                             <Form.Label>Message</Form.Label>
                             <Form.Control
+                            name='message'
                             as="textarea" 
                             placeholder="Message"
                             type="text"
@@ -79,14 +109,19 @@ function ContactForm() {
                             variant="success"
                             size="lg"
                             > 
-                            Send Message&nbsp;
                             {
                             submit &&
-                            <IoSend/>
+                            <>
+                            Sucess&nbsp;
+                            <IoCheckmarkDoneSharp/>
+                            </>
                             }
                             {
                             !submit &&
-                            <IoSend/>
+                                <>
+                                    Send Message&nbsp;
+                                    <IoSend/>
+                                </>
                             }
                             </Button>
                     </Form>
@@ -95,6 +130,7 @@ function ContactForm() {
         
         </Card>
     </div>
+    
   )
 }
 

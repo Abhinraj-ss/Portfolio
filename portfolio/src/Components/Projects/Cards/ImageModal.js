@@ -5,7 +5,7 @@ function ImageModal(props) {
     <Modal show={props.show} fullscreen='md-down' onHide={props.handleClose}>
         <Modal.Body  >
             <Modal.Header closeVariant='white' closeButton/>
-            <Image className='modalImg' loading='lazy' src={props.link}/>
+            <Image alt='HqImage' className='modalImg' loading='lazy' src={props.link}/>
         </Modal.Body>
       </Modal>
 

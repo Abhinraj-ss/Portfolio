@@ -14,7 +14,7 @@ function Skills({mode}){
     <Card className="skills">
             <Col>
             <Pulse  top>
-            <Image loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
+            <Image alt='designer' loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
                 </Pulse >
                 <Bounce cascade>
                 <h3>
@@ -52,7 +52,7 @@ function Skills({mode}){
             </Col>
             <Col>
             <Pulse  top>
-            <Image loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
+            <Image alt='developer' loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
                 </Pulse >
                 <Bounce cascade>
                 <h3>

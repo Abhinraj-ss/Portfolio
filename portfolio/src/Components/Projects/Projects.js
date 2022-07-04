@@ -24,8 +24,8 @@ function Projects() {
               webProjects.map(
                 (projectData,index)=>{
                   return(
-                    <Roll left>
-                  <ProjectCard key={index} projectData={projectData}/>
+                    <Roll left key={index}>
+                  <ProjectCard  projectData={projectData}/>
                   </Roll>)
                 }
               )
@@ -43,8 +43,8 @@ function Projects() {
             graphicProjects.map(
               (projectData,index)=>{
                 return(
-                  <Roll right >
-                <ProjectCard key={index} projectData={projectData}/>
+                  <Roll right key={index}>
+                <ProjectCard  projectData={projectData}/>
                 </Roll>
                 )
               }

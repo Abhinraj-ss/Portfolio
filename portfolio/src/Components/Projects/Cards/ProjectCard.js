@@ -17,7 +17,7 @@ function ProjectCard( {projectData}) {
       {
         projectData.color&& 
         <div className="bg">
-          <Image loading='lazy' src={projectData.image}
+          <Image alt='background' loading='lazy' src={projectData.image}
           width={90}/>
           <h2>
           {projectData.title}

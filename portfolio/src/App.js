@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef,useState,useMemo, useEffect } from 'react';
-import { Button,Image } from 'react-bootstrap';
+import { Button,Image} from 'react-bootstrap';
 import {MdOutlineDarkMode,MdOutlineLightMode} from 'react-icons/md'
 import { IconContext } from 'react-icons/lib'
 import Lottie from "lottie-react";
@@ -43,7 +43,6 @@ function App() {
 
   var icon = useMemo(()=>{return menuOpen? closeLight:((mode==='dark')?menuLight:menuDark)},[mode,menuOpen])
   const handleMenuClick=()=>{
-      console.log(menuOpen)
         setMenuOpen( !menuOpen)
   }
 
@@ -55,8 +54,7 @@ function App() {
       })
     },[]
   )
-
-  
+ 
   return (
     <div className="App" data-visible={isVisible} data-mode={mode}>
          
@@ -67,6 +65,7 @@ function App() {
       <div className="navbar" data-visible={isVisible}>
             <a href='/'>
                     <Image
+                    alt='logo'
                     className='logo'
                     src={(mode==='dark')? logoLight:logoDark}
                     />
@@ -88,7 +87,7 @@ function App() {
             <Button variant='outline-primary' id='sayHello' data-visible={menuOpen} onClick={()=>gotoSection(contactSection)}>
                     Say Hello
                 </Button>
-                <IconContext.Provider value={{size:'1.5rem',color:'#f3f3f3' }}  >
+                <IconContext.Provider value={{size:'1.7rem',color:'#f3f3f3' }}  >
                   {
                     (mode==='dark')? 
                       <MdOutlineLightMode className='modeIcon'  data-mode='light' onClick={()=>setMode('light')}/>
@@ -97,6 +96,7 @@ function App() {
                     </IconContext.Provider>
             <Image 
                 className='menuIcon' 
+                alt='menu'
                 src={icon} 
                 loading='lazy'
                 height={35} 

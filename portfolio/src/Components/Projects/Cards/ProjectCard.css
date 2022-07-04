@@ -70,6 +70,15 @@
     font-weight: 800;
     font-size: 1.1em;
 }
+
+@media screen and (max-width:660px) {
+    .card-body>span>p>b{
+        font-size: 1em;
+    }
+    .card-body>span{
+        font-size: 0.21em;
+    }
+}
 .projectCard .btn{
     background-color: var(--clr-secondary);
     border: none;

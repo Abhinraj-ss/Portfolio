@@ -10,6 +10,7 @@
     /* outline: auto; */
 }
 .contactForm .card{
+    position: relative;
     background-color: var(--clr-bg);
     border-radius: 0.5vmax 0.5vmax 0.5vmax 0.5vmax;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.177);
@@ -61,6 +62,16 @@
     font-size: 1rem;
     font-weight: 150;
 }
+.alert{
+    position: fixed;
+    width: 250px;
+    font-size: 1rem;
+    z-index: 1000;
+    margin-inline: auto;
+    top: 0em;
+    transform: translateY(5em);
+    transition: transform 600ms ease-in-out;
+  }
 
 @media screen and (max-width:840px) {
     .cardContent{

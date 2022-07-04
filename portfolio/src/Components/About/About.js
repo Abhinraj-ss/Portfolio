@@ -11,7 +11,7 @@ function About({mode}) {
     <div className='About'>
     <div className="about-content"  >
     <span>
-        <Image className='profileImg' src={profile}/>
+        <Image alt='profile' className='profileImg' src={profile}/>
         <Fade top>
         <h1 >
           Hi, I'm Abhin Raj.
