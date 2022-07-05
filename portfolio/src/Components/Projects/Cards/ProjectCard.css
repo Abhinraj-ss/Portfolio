@@ -65,10 +65,10 @@
 }
 .card-body>span>p>b{
     color: var(--clr-secondary);
-    font-weight: 800;
+    font-weight: 1000;
     font-size: 1.1em;
+    font-style: bold;
 }
-
 
 .projectCard .btn{
     background-color: var(--clr-secondary);
@@ -83,7 +83,9 @@
 
 @media screen and (max-width:660px) {
     .card-body>span>p>b{
-        font-size: 1em;
+        font-size: 1.01em;
+        font-weight: 900;
+        
     }
     .card-body>span{
         font-size: 0.21em;

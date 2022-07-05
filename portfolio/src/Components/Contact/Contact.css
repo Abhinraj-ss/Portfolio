@@ -20,7 +20,7 @@
     padding-bottom: 5%;
     z-index: -1;
     clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
-    padding-top:15em ;
+    padding-top:40rem ;
 }
 
 .footerbox>svg{
@@ -65,4 +65,12 @@
     .Contact{
         margin-top: 48%;
     }
+    .footerbox{
+        padding-top: 12em;
+    }
+}
+@media screen and (max-width:640px) {
+    .footerbox{
+        padding-top: 16em;
+    } 
 }

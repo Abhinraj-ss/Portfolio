@@ -152,7 +152,6 @@ p,li{
   width: 1.8em;
   cursor: pointer;
   opacity: 0;
-  padding-top: 0.2em;
   vertical-align: top;
   animation: logoOpacity 100ms ease-in forwards;
   animation-delay: 5.5s;
@@ -167,6 +166,8 @@ p,li{
 }
 .navbar a{
   text-decoration: none;
+  color: transparent;
+  padding-bottom: 0.1em;
 }
 .navbar>a>svg{
   width: 1.8em;
@@ -258,7 +259,7 @@ p,li{
       text-align: center;
       position:absolute;
       flex-wrap: nowrap;
-      width: 101vw;
+      width: 100%;
       height: 100vh;
       justify-content: flex-start;
       font-size: 1.2rem;
@@ -267,7 +268,7 @@ p,li{
       gap: 4rem;
       padding-block: 25vh;
       top: -1em;
-      right: -2em;
+      right: -1em;
       transform: translateX(150%);
       z-index: 998;
       opacity: 0;

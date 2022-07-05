@@ -21,7 +21,7 @@
 
 .contactForm .card-title{
     text-align: center;
-    font-size: 0.7em;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 500;
     color: var(--clr-WhiteToSecondary);

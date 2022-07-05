@@ -33,7 +33,7 @@ function ProjectCard( {projectData}) {
             
             <span>
               <p>
-                {projectData.keywords}<br/>
+                <b>{projectData.keywords}</b><br/>
                 {projectData.content}
               </p>
             </span>

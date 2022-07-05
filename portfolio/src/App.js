@@ -30,7 +30,9 @@ function App() {
       threshold:0
     }},[])
   const gotoSection = (sectionRef) =>{
-    handleMenuClick()
+    if(menuOpen){
+      handleMenuClick()
+    } 
     window.scrollTo({
       top:sectionRef.current.offsetTop,
       behavior:"smooth"
@@ -41,7 +43,7 @@ function App() {
 
 
   const handleMenuClick=()=>{
-        setMenuOpen( !menuOpen)
+        setMenuOpen(!menuOpen)
   }
 
   useEffect(
@@ -65,7 +67,6 @@ function App() {
                     alt='logo'
                     className='logo'
                     fill={(mode==='dark')? '#fff':'#482673'}/>
-                    
                 </a>
             <ul data-visible={menuOpen}>
                     
