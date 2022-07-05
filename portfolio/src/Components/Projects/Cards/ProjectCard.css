@@ -31,14 +31,12 @@
     width: max-content;
     font-size: 0.5em;
 }
-.bg:hover{
-    opacity: 0;
-}
+
 .card-body{
     position: relative;
     color: var(--clr-white);
-    background: linear-gradient(to top, #1e1d23c2, #16151def);
-    opacity: 0;
+    background: linear-gradient(to top, #1e1d23b7, #16151dd9);
+    opacity: 1;
     height: 100%;
     transition: opacity 200ms ease-in;
     padding: 10%;
@@ -71,14 +69,7 @@
     font-size: 1.1em;
 }
 
-@media screen and (max-width:660px) {
-    .card-body>span>p>b{
-        font-size: 1em;
-    }
-    .card-body>span{
-        font-size: 0.21em;
-    }
-}
+
 .projectCard .btn{
     background-color: var(--clr-secondary);
     border: none;
@@ -88,4 +79,25 @@
     left: 0%;
     right: 0%;
     margin-inline: 10%;
+}
+
+@media screen and (max-width:660px) {
+    .card-body>span>p>b{
+        font-size: 1em;
+    }
+    .card-body>span{
+        font-size: 0.21em;
+    }
+}
+
+@media (hover) {
+    .card-body{
+        position: relative;
+        color: var(--clr-white);
+        background: linear-gradient(to top, #1e1d23c2, #16151def);
+        opacity: 0;
+        height: 100%;
+        transition: opacity 200ms ease-in;
+        padding: 10%;
+    }
 }

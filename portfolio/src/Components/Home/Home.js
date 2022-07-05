@@ -28,7 +28,6 @@ function Home({mode,offsetTopContact}) {
       <IconContext.Provider value={{size:'1.6rem',color:'#DE354C' }}>
             <div className="intro">
                 <div className="main-heading">
-
                     <h1>
                         Fullstack Web <wbr/>Developer &<br/> Graphic Designer.
                     </h1>
@@ -56,7 +55,7 @@ function Home({mode,offsetTopContact}) {
       </Jello>
             </div>
             
-            </IconContext.Provider>
+            </IconContext.Provider> 
             
     </div>
   )

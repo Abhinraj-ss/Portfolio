@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef,useState,useMemo, useEffect } from 'react';
-import { Button,Image} from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import {MdOutlineDarkMode,MdOutlineLightMode} from 'react-icons/md'
 import { IconContext } from 'react-icons/lib'
 import Lottie from "lottie-react";
@@ -12,12 +12,10 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
-import logoLight from './assets/images/logo_light.svg'
-import logoDark from './assets/images/logo_dark.svg'
-import menuLight from './assets/images/menu_light.svg'
-import menuDark from './assets/images/menu_dark.svg'
-import closeLight from './assets/images/closeIconWyt.svg'
 import useElementOnScroll from './assets/useElementOnScroll';
+import Logo from './assets/Logo';
+import CloseIcon from './assets/CloseIcon';
+import MenuIcon from './assets/MenuIcon';
 
 function App() {
   const homeSection = useRef(null)
@@ -41,7 +39,7 @@ function App() {
   const [menuOpen, setMenuOpen]=useState(false)
   const isVisible = useElementOnScroll(homeSection,options)
 
-  var icon = useMemo(()=>{return menuOpen? closeLight:((mode==='dark')?menuLight:menuDark)},[mode,menuOpen])
+
   const handleMenuClick=()=>{
         setMenuOpen( !menuOpen)
   }
@@ -61,14 +59,13 @@ function App() {
       <div className="splash">
         <Lottie className='logo_splash' animationData={logoAnimate} loop={false}/>
       </div>
-      
       <div className="navbar" data-visible={isVisible}>
             <a href='/'>
-                    <Image
+                <Logo 
                     alt='logo'
                     className='logo'
-                    src={(mode==='dark')? logoLight:logoDark}
-                    />
+                    fill={(mode==='dark')? '#fff':'#482673'}/>
+                    
                 </a>
             <ul data-visible={menuOpen}>
                     
@@ -84,7 +81,7 @@ function App() {
                     
             </ul>
             <div className='navToogle'>
-            <Button variant='outline-primary' id='sayHello' data-visible={menuOpen} onClick={()=>gotoSection(contactSection)}>
+                <Button variant='outline-primary' id='sayHello' data-visible={menuOpen} onClick={()=>gotoSection(contactSection)}>
                     Say Hello
                 </Button>
                 <IconContext.Provider value={{size:'1.7rem',color:'#f3f3f3' }}  >
@@ -93,15 +90,15 @@ function App() {
                       <MdOutlineLightMode className='modeIcon'  data-mode='light' onClick={()=>setMode('light')}/>
                       :<MdOutlineDarkMode className='modeIcon' color='#482673' data-mode='dark' onClick={()=>setMode('dark')}/>
                   }
-                    </IconContext.Provider>
-            <Image 
-                className='menuIcon' 
-                alt='menu'
-                src={icon} 
-                loading='lazy'
-                height={35} 
-                width={35} 
-                onClick={handleMenuClick}/>
+                </IconContext.Provider>
+            {
+              menuOpen? <CloseIcon alt='menu'className='menuIcon' onClick={handleMenuClick}/>:
+              ((mode==='light')?
+              <MenuIcon className='menuIcon' 
+              alt='menu' bg='#482673' outline='none' stroke='none' onClick={handleMenuClick}/>: 
+              <MenuIcon className='menuIcon' 
+              alt='menu' bg='#0a192f' outline='#de354c' stroke='#fff' onClick={handleMenuClick}/>)
+            }
             </div>
         </div>
       <div className="pages d-flex"  >

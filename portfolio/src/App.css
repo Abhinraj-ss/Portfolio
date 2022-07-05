@@ -168,6 +168,9 @@ p,li{
 .navbar a{
   text-decoration: none;
 }
+.navbar>a>svg{
+  width: 1.8em;
+}
 .navbar li{
   display: table;
   cursor: pointer;
@@ -227,7 +230,7 @@ p,li{
 .modeIcon[data-mode='light']{
   display: block;
 }
-.navbar .menuIcon{
+.navToogle>svg{
   display: none;
   z-index: 999;
 }
@@ -241,14 +244,13 @@ p,li{
   .navbar .btn[data-visible = 'true']{
     color: var(--clr-white);
   }
-  .navbar .menuIcon{
-      display: block;
-      cursor: pointer;
-      right: 0%;
-      position: relative;
-      margin-inline-start: 0.5em;
-  }
   
+  .navToogle>svg{
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    margin-left: 0.2em;
+  }
   .navbar ul{
       flex-direction: column;
       background-color: var(--clr-primaryToPrimryLight);

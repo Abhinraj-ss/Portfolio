@@ -1,12 +1,11 @@
 import React from 'react'
-import { Image} from 'react-bootstrap'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib'
 
 
 import './Contact.css'
-import logo from '../../assets/images/logo_light.svg'
 import ContactForm from './ContactForm/ContactForm'
+import Logo from '../../assets/Logo'
 
 function Contact() {
 
@@ -15,13 +14,16 @@ function Contact() {
       <IconContext.Provider value={{size:'1.4rem',color:'#f3f3f3' }} >
         <ContactForm/>
       <div className="footerbox">
-      <Image
-          alt='logo'
-          loading='lazy'
-          id='footerLogo'
-          src={logo}
-          />
-          <span>I am a web developer,<wbr/> what is your superpower ??</span>
+        <Logo alt='logo'
+            loading='lazy'
+             fill='#fff' />
+        {/* <Image
+            alt='logo'
+            loading='lazy'
+            id='footerLogo'
+            src={}
+            /> */}
+        <span>I am a <b>web developer</b>,<wbr/> what is your <b>superpower</b> <strong>??</strong></span>
 
         <div className="social">
           <a rel="noreferrer" href='https://github.com/Abhinraj-ss' target='_blank'>
@@ -41,7 +43,7 @@ function Contact() {
           
         </div>
         <p>
-        Doodled by ABHIN RAJ  
+        Doodled by <strong>ABHIN RAJ</strong>  
         </p>
         {/* <p>
           Made with passion

@@ -1,20 +1,19 @@
 import React from 'react'
-import { Card, Col, Image} from 'react-bootstrap'
+import { Card, Col} from 'react-bootstrap'
 import Pulse  from 'react-reveal/Pulse'
 import Bounce from 'react-reveal/Bounce'
 
 import './Skills.css'
-import designerDarkIcon from '../../assets/images/vector_dark.svg'
-import developerDarkIcon from '../../assets/images/coding_dark.svg'
-import designerLightIcon from '../../assets/images/vector_light.svg'
-import developerLightIcon from '../../assets/images/coding_light.svg'
+import PenTool from '../../assets/PenTool'
+import Coding from '../../assets/Coding'
 
 function Skills({mode}){
   return (
     <Card className="skills">
             <Col>
             <Pulse  top>
-            <Image alt='designer' loading='lazy' src={(mode==='light')?designerDarkIcon:designerLightIcon} height={120} />
+            
+                <PenTool alt='designer' fill={(mode==='dark')?'#fff':'#6d3eb7'}/>
                 </Pulse >
                 <Bounce cascade>
                 <h3>
@@ -52,7 +51,7 @@ function Skills({mode}){
             </Col>
             <Col>
             <Pulse  top>
-            <Image alt='developer' loading='lazy' src={(mode==='light')?developerDarkIcon:developerLightIcon} height={120} />
+                <Coding alt='developer' loading='lazy' fill={(mode==='dark')?'#fff':'#6d3eb7'}/>
                 </Pulse >
                 <Bounce cascade>
                 <h3>
