@@ -33,7 +33,7 @@ Home Content
     font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
     color: transparent;
-    -webkit-text-stroke: 1.5px var(--clr-mainHeading);
+    -webkit-text-stroke: 1px var(--clr-mainHeading);
     background: url(../../assets/images/headingBg.svg);
     background-repeat: repeat;
     background-position: 0 0;
