@@ -18,12 +18,12 @@ export const webProjects =[
         'link': 'https://percentpoll.herokuapp.com/'
     },
     {
-        'title':'PercentPoll',
-        'keywords':<b>Flask| Django| CSS| Python| Bootstrap| SQLite| SQLAlchemy| Git</b>,
+        'title':'Unheard Voices',
+        'keywords':<b>ReactJS| Flask| CSS| Python| Axios| Bootstrap| PostgreSQL| Git</b>,
         'content':"this is a project card.Lorem ipsum dolor sit amet consectetur adipisicing elit Maxime mollitia molestiae quas vel sint commodi repudiandae consequuntu",
-        image:require('../../assets/images/percentpoll.png'),
-        'color':'#9c27b0',
-        'font':'',
-        'link': 'https://percentpoll.herokuapp.com/'
+        image:require('../../assets/images/unheardvoices.png'),
+        'color':'linear-gradient(to bottom,#30cfd0 0,#158FC3  100%)',
+        'font':'Montserrat, sans-serif',
+        'link': 'https://unheard-voices.netlify.app/'
     }
 ]
