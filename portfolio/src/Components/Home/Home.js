@@ -32,7 +32,7 @@ function Home({mode,offsetTopContact}) {
                         Fullstack Web <wbr/>Developer &<br/> Graphic Designer.
                     </h1>
                 </div>
-                  <Button onClick={gotoSection}>
+                  <Button className='Btn-sec-Accent' onClick={gotoSection}>
                       Hire Me
                   </Button>
                 <Jello>

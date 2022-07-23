@@ -38,7 +38,7 @@ Home Content
     background-repeat: repeat;
     background-position: 0 0;
     -webkit-background-clip: text;
-    animation: rolling 20s linear infinite;
+    animation: rolling 30s linear infinite;
 }
 @keyframes rolling {
     100%{
@@ -46,15 +46,16 @@ Home Content
     }
 }
 
-.intro .btn{
+.Btn-sec-Accent{
     background-color: var(--clr-secondary);
     border: none;
     width: fit-content;
-    font-size: 0.3em;
-    margin-top: 1em;
+    font-size: 0.9rem;
+    margin-top: 1rem;
     transition: transform 100ms ease-in-out;
 }
-.intro .btn:hover{
+.Btn-sec-Accent:hover{
+    background-color: var(--clr-secondary);
     transform: scale(1.05);
 }
 .socialHome{

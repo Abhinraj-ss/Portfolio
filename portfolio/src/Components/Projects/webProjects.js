@@ -2,7 +2,7 @@ export const webProjects =[
     {
         'title':'Percent Poll2',
         'keywords':<b>ReactJS| Flask| CSS| Python| Axios| Bootstrap| ChartJS| MySQL| Git</b>,
-        'content':"An anonymous, single-page poll app using ReactJSand Flask. Hosts can create polls and share their poll links through various social platforms.",
+        'content':"An anonymous, single-page poll app using ReactJS and Flask. Hosts can create polls and share their poll links through various social platforms.",
         image:require('../../assets/images/percentpoll2.png'),
         'color':'linear-gradient(to bottom,#30cfd0 0,#06085a 100%)',
         'font':'Comfortaa,cursive',
@@ -20,7 +20,7 @@ export const webProjects =[
     {
         'title':'Unheard Voices',
         'keywords':<b>ReactJS| Flask| CSS| Python| Axios| Bootstrap| PostgreSQL| Git</b>,
-        'content':"this is a project card.Lorem ipsum dolor sit amet consectetur adipisicing elit Maxime mollitia molestiae quas vel sint commodi repudiandae consequuntu",
+        'content':"Your voices might have been suppressed by anyone else at any point of your life, This is a platform for anyone else like you can raise your unheard voices as the first step of roar.",
         image:require('../../assets/images/unheardvoices.png'),
         'color':'linear-gradient(to bottom,#30cfd0 0,#158FC3  100%)',
         'font':'Montserrat, sans-serif',
