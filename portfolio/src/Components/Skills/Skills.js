@@ -79,9 +79,6 @@ function Skills({mode}){
                     Bootstrap
                   </li>
                   <li>
-                    Django
-                  </li>
-                  <li>
                     Flask
                   </li>
                   <li>
